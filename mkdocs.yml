@@ -3,4 +3,4 @@ nav:
   - 主页: index.md
   - 圣物: 
     - 圣物索引: Potions\PotionsIndex.md
-  - 测试: Potions\PotionPageTemplate.md
+  - 圣物模板: Potions\PotionPageTemplate.md
