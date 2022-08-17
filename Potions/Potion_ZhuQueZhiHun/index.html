@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>测试 - 暖雪中文Wiki</title>
+        <title>朱雀之魂 - 暖雪中文Wiki</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -45,8 +45,8 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="navitem active">
-                                <a href="./" class="nav-link">测试</a>
+                            <li class="navitem">
+                                <a href="../PotionPageTemplate/" class="nav-link">测试</a>
                             </li>
                         </ul>
 
@@ -56,16 +56,6 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li class="nav-item">
-                                <a rel="prev" href="../PotionsIndex/" class="nav-link">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" class="nav-link disabled">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +74,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">(圣物名称)</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">朱雀之魂</a>
               <ul class="nav flex-column">
             <li class="nav-item" data-level="2"><a href="#_2" class="nav-link">简介</a>
               <ul class="nav flex-column">
@@ -109,17 +99,17 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="_1">(圣物名称)</h1>
-<p>（图片）（异闻录相关词条文本 或 其他相关剧情文本）</p>
+<h1 id="_1">朱雀之魂</h1>
+<p>（朱雀之魂图片）</p>
 <h2 id="_2">简介</h2>
 <h2 id="_3">圣物效果</h2>
-<h3 id="_4">核心</h3>
-<p>（核心槽中的技能文本）  </p>
-<h3 id="_5">力量</h3>
+<h4 id="_4"><strong>核心</strong></h4>
+<p><font color = BlueViolet>（核心槽中的技能文本）</font>  </p>
+<h4 id="_5"><strong>力量</strong></h4>
 <p>（力量槽中的技能文本）  </p>
-<h3 id="_6">敏捷</h3>
+<h4 id="_6"><strong>敏捷</strong></h4>
 <p>（敏捷槽中的技能文本）  </p>
-<h3 id="_7">功效</h3>
+<h4 id="_7"><strong>功效</strong></h4>
 <p>（功效槽中的技能文本）  </p>
 <h2 id="_8">圣物机制</h2>
 <table>
@@ -144,18 +134,33 @@
 </tr>
 </tbody>
 </table>
-<h3 id="_9">核心</h3>
+<h4 id="_9"><strong>核心</strong></h4>
 <p>（圣物核心槽相关效果的机制）</p>
-<h3 id="_10">力量</h3>
-<p>（圣物力量槽相关效果的机制）</p>
-<h3 id="_11">敏捷</h3>
-<p>（圣物敏捷槽相关效果的机制）</p>
-<h3 id="_12">功效</h3>
+<h4 id="_10"><strong>力量</strong></h4>
+<p>额外附加的伤害计算方式为：<br />
+<code>5% + 倍率系数 * 精炼个数</code></p>
+<p>例：</p>
+<p>当圣物品质为金色，且当前精炼了20个圣物的情况下<br />
+面板取值倍率为: <code>5% + 1.5% * 20 = 35%</code></p>
+<h4 id="_11"><strong>敏捷</strong></h4>
+<p>当在敏捷槽携带朱雀之魂时，会依据当前的精炼计数提供对应数值的移速以及攻速加成。  </p>
+<p>要注意的是：相比于须臾之砂的敏捷槽，朱雀之魂的移速转伤效果仅对精炼计数提供的移速加成生效。<br />
+例：<br />
+    假设当前总额外移速加成190%，其中朱雀之魂从精炼数提供的移速加成为30%<br />
+    须臾之砂转伤幅度为 <code>190% * 50% = 85%</code><br />
+    朱雀之魂转伤幅度为 <code>30% * 50% = 15%</code></p>
+<h4 id="_12"><strong>功效</strong></h4>
 <p>（圣物功效槽相关效果的机制）</p>
 <h2 id="_13">补充</h2>
 <ul>
-<li>补充信息1</li>
-<li>补充信息2</li>
+<li>
+<p>截至2022-8-17号，游戏内的朱雀之魂力量槽效果描述仍然存在问题。<br />
+    文案文本：<br />
+<em>造成伤害时会附加攻击力</em> <strong><em>5%</em></strong> <em>的真实伤害</em> <br />
+    实际效果：<br />
+<em>造成效果时会附加攻击力</em> <strong><em>3%</em></strong> <em>的真实伤害</em></p>
+<p>即：基础提供的攻击力倍率并非<code>5%</code>而是<code>3%</code></p>
+</li>
 </ul></div>
             </div>
         </div>
