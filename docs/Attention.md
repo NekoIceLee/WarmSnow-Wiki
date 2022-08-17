@@ -26,10 +26,10 @@
 ## 如何为本站点新增页面
 - 安装Git
 - 安装Python、mkdocs  
-    > `pip install --upgrade pip`  
-    > `pip install mkdocs`
-- 找一个好地方，打开Git Bash或CMD
-    > `git clone https://github.com/NekoIceLee/WarmSnow-Wiki.git`
+    `pip install --upgrade pip`  
+    `pip install mkdocs`
+- 找一个好地方，打开Git Bash或CMD  
+    `git clone https://github.com/NekoIceLee/WarmSnow-Wiki.git`
 - 基于master新建分支
 - 在分支内对Wiki内容进行编辑修改。
 - 编辑完成后提交Pull Request请求合并到当前网站。
