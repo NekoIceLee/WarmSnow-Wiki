@@ -1,4 +1,6 @@
 site_name: 暖雪中文Wiki
 nav:
-  - 主页: Home.md
-  - 测试: first.md
+  - 主页: index.md
+  - 圣物: 
+    - 圣物索引: Potions\PotionsIndex.md
+  - 测试: Potions\PotionPageTemplate.md
