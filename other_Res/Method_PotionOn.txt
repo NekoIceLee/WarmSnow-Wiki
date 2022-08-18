@@ -1,0 +1,249 @@
+public void PotionOn(Potion potion)
+{
+	if (potion.PotionName != PN.None)
+	{
+		GlobalParameter.instance.PotionUsed[potion.PotionName - PN.XuanWuZhiHun] = true;
+	}
+	if (potion.potionType == PotionType.Core)
+	{
+		if (potion.PotionName != PN.None)
+		{
+			this.player.playerParameter.PotionCorePN = potion.PotionName;
+			UI_PotionSkillMpPanel.instance.PotionSkillUiUpdate(potion.PotionName);
+		}
+		else
+		{
+			this.player.playerParameter.MAX_MP = 0f;
+			this.player.playerParameter.MP = 0f;
+		}
+		switch (potion.PotionName)
+		{
+		case PN.None:
+			break;
+		case PN.XuanWuZhiHun:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 110f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.BaiHuZhiHun:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 80f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.QingLongZhiHun:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.ZhuQueZhiHun:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 80f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.BreakingFinger:
+			this.player.playerParameter.isPotionBreath = true;
+			this.player.playerParameter.MAX_MP = 120f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.IncisiveTooth:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 45f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.BruiseWeed:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.BigBone:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 20f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.Pearl:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 30f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.Realgar:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 42f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.HeartOfHatred:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 80f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.GatherKiWeed:
+			this.player.playerParameter.isPotionBreath = true;
+			this.player.playerParameter.MAX_MP = 30f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.TheBloodOfPig:
+			this.player.playerParameter.isPotionBreath = true;
+			this.player.playerParameter.MAX_MP = 80f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.FireStone:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 20f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.ImmortalWine:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 75f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.BloodGanoderma:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 50f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.MillenniumIce:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.WolfKingWhiteMane:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 85f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.DeathLotus:
+			this.player.playerParameter.isPotionBreath = true;
+			this.player.playerParameter.MAX_MP = 30f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.RageBlood:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 100f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.WindWeed:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 25f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.IceBreaker:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 20f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.TimeSands:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 100f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.InkFireCristal:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.StarJade:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 42f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.CoreofPower:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.WheelGun:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.FireBooster:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 65f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.IronSheild:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 80f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.YellowPaper:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 35f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.FlowerOfNorthWind:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 36f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.VenomSac:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 30f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.HairOfWitch:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 45f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.ThreeColorCrystal:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.LightningRod:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 42f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.MutatedStump:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.SignetOfTiger:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 30f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.DragonFall:
+			this.player.playerParameter.isPotionBreath = true;
+			this.player.playerParameter.MAX_MP = 120f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.ThunderStone:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.BlackPowder:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 75f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.Hydrargyrum:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.BlueSteel:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 75f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		case PN.SpiritJade:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 75f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		default:
+			this.player.playerParameter.isPotionBreath = false;
+			this.player.playerParameter.MAX_MP = 60f;
+			this.player.playerParameter.PotionManaCost = this.player.playerParameter.MAX_MP;
+			break;
+		}
+		if (potion.PotionName != PN.None && GlobalParameter.instance.isFirstCorePotionClarity)
+		{
+			GlobalParameter.instance.isFirstCorePotionClarity = false;
+			this.player.Clarity(999f);
+		}
+	}

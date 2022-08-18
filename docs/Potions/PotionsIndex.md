@@ -2,7 +2,7 @@
 ## B
 北风花
 
-白虎之魂
+[白虎之魂](Potion_BaiHuZhiHun.md)
 
 变异残肢
 
