@@ -1,5 +1,5 @@
 # 青龙之魂
-![青龙之魂](../Img/Texture2D_Potion/朱雀之魂.png)
+![青龙之魂](../Img/Texture2D_Potion/青龙之魂.png)
 ## 简介
 ## 圣物效果
 #### **核心**  
