@@ -15,7 +15,7 @@
 
 跌打草
 ## F
-锋锐之牙
+[锋锐之牙](Potion_IncisiveTooth.md)
 
 ## G
 鬼妃断发
@@ -40,7 +40,7 @@
 狂暴之血
 
 ## L
-灵玉
+[灵玉](Potion_SpiritJade.md)
 
 狼王白鬃
 
@@ -56,14 +56,14 @@
 破冰石
 
 ## Q
-青钢
+[青钢](Potion_BlueSteel.md)
 
 青龙之魂
 
 千年寒冰
 
 ## S
-水银
+[水银](Potion_Hydrargyrum.md)
 
 死之莲
 
@@ -92,7 +92,7 @@
 引雷锁
 
 ## Z
-珍珠
+[珍珠](Potion_Pearl.md)
 
 醉仙酿
 

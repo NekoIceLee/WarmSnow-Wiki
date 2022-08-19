@@ -3,8 +3,8 @@
 ## 简介
 ## 圣物效果
 #### **核心**  
-- 主动技能：对周围施放7次斩击，每次斩击造成<font color=gray>12</font>/<font color=BlueViolet>13</font>/<font color=gold>15</font>点近战伤害。
-- 如果该技能击杀任何一个档位，则会立刻恢复<font color=gray>0%</font>/<font color=BlueViolet>50%</font>/<font color=gold>100%</font>的气槽值。
+- 主动技能：对周围施放7次斩击，每次斩击造成近战攻击力的<font color=gray>75%</font>/<font color=BlueViolet>85%</font>/<font color=gold>95%</font>点近战伤害。
+- 如果该技能击杀任何一个单位，则会立刻恢复<font color=gray>0%</font>/<font color=BlueViolet>50%</font>/<font color=gold>100%</font>的气槽值。
 #### **力量** 
 - 近战攻击+<font color=gray>7%</font>/<font color=BlueViolet>14%</font>/<font color=gold>20%</font>
 - 近战攻击时：有<font color=gray>0%</font>/<font color=BlueViolet>15%</font>/<font color=gold>25%</font>的几率使目标【流血】。
@@ -21,7 +21,7 @@
 | :----: | :----: |
 |怒气需求|45|
 |掉落等级|白、紫、金|
-|解锁方式|天赋精炼分支|
+|解锁方式|默认解锁|
 
 #### **核心**
 
@@ -35,6 +35,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>
