@@ -8,7 +8,7 @@
 - <font color=gold>敌人每损失5%的生命，月光对其造成的伤害提高5%。</font>
 #### **力量** 
 - 造成伤害时：有<font color=gray>10%</font>/<font color=BlueViolet>15%</font>/<font color=gold>20%</font>的几率召唤一颗微型太阳，每秒对周围造成总攻击<font color=gray>80%</font>/<font color=BlueViolet>80%</font>/<font color=gold>80%</font>点火焰伤害，持续3秒。
-- <font color=gold>微型太阳会在3秒后坍缩成一颗黑洞，每秒对周围造成10点伤害并吸引敌人，持续3秒。</font>
+- <font color=gold>微型太阳会在3秒后坍缩成一颗黑洞，每秒对周围造成攻击力100%点伤害并吸引敌人，持续3秒。</font>
 #### **敏捷**
 - 瞬身：向附近随机一个敌人发射一枚陨星造成总攻击<font color=gray>55%</font>/<font color=BlueViolet>55%</font>/<font color=gold>55%</font>点伤害。
 - 陨星命中敌人时有10%的几率使敌人[昏迷]0.5秒。
@@ -23,7 +23,7 @@
 | :----: | :----: |
 |怒气需求|42|
 |掉落等级|白、紫、金|
-|解锁方式|天赋精炼分支|
+|解锁方式|异闻录解锁|
 
 #### **核心**
 
