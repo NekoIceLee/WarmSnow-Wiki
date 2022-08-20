@@ -29,7 +29,7 @@
 [黑火药](Potion_BlackPowder.md)
 
 ## J
-[机关核心](Potion_CoreofPower.md)
+[动力核心](Potion_CoreofPower.md)
 
 [机关炮轮](Potion_WheelGun.md)
 

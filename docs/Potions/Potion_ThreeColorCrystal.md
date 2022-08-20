@@ -1,5 +1,5 @@
-# 青钢
-![青钢](../Img/Texture2D_Potion/青钢.png)
+# 三色结晶
+![三色结晶](../Img/Texture2D_Potion/三色结晶.png)
 ## 简介
 ## 圣物效果
 #### **核心**  
