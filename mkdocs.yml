@@ -3,4 +3,5 @@ nav:
   - 主页: index.md
   - 圣物: 
     - 圣物索引: Potions\PotionsIndex.md
-  - 圣物模板: Potions\PotionPageTemplate.md
+  - 武器:
+    - 武器索引: Weapons\WeaponsIndex.md
