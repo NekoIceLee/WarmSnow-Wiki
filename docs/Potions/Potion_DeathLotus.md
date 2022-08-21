@@ -1,5 +1,5 @@
 # 死之莲
-![死之莲钢](../Img/Texture2D_Potion/死之莲.png)
+![死之莲](../Img/Texture2D_Potion/死之莲.png)
 ## 简介
 ## 圣物效果
 #### **核心**  
@@ -12,13 +12,13 @@
 - <font color=gold>死之花瓣会对命中的敌人施加1秒的死亡标记。</font>
 
 #### **敏捷**
-- 瞬身时：在你身后生成<font color=gray>1</font>/<font color=BlueViolet>1</font>/<font color=gold>3</font>朵死之莲，当有敌人触碰到死之莲时，死之莲会爆炸向周围射出<font color=gray>5</font>/<font color=BlueViolet>7</font>/<font color=gold>7</font>枚死之花瓣，每枚花瓣造成总攻击<font color=gray>25%</font>/<font color=BlueViolet>25%</font>/<font color=gold>25%</font>点伤害。- 
+- 瞬身时：在你身后生成<font color=gray>1</font>/<font color=BlueViolet>1</font>/<font color=gold>3</font>朵死之莲，当有敌人触碰到死之莲时，死之莲会爆炸向周围射出<font color=gray>5</font>/<font color=BlueViolet>7</font>/<font color=gold>7</font>枚死之花瓣，每枚花瓣造成总攻击<font color=gray>25%</font>/<font color=BlueViolet>25%</font>/<font color=gold>25%</font>点伤害。
 - 最多存在9朵死之莲。
 
 #### **功效**
 - 防御+<font color=gray>5%</font>/<font color=BlueViolet>10%</font>/<font color=gold>10%</font>
 - 受击时：有<font color=gray>15%</font>/<font color=BlueViolet>25%</font>/<font color=gold>25%</font>几率向周围射出6枚死之花瓣，每枚花瓣造成总攻击的<font color=gray>25%</font>/<font color=BlueViolet>25%</font>/<font color=gold>25%</font>点伤害。
-- <font color=gold>你的生命低于12%时:触发几率提高65%，死之花瓣造成的伤害的15%转化为生命恢复。</font>
+- <font color=gold>你的生命低于12%时：触发几率提高65%，死之花瓣造成的伤害的15%转化为生命恢复。</font>
 
 
 ## 圣物机制
@@ -40,6 +40,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>

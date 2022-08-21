@@ -42,6 +42,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>

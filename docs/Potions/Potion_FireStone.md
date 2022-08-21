@@ -12,7 +12,7 @@
 - <font color=gold>使你造成的所有火焰伤害提高25%</font>
 
 #### **敏捷**
-- 瞬身时：在你的移动路径上产生 <font color=gray>火花</font>/<font color=BlueViolet>火花</font>/<font color=gold>火墙</font>，持续3秒。每秒对处于 <font color=gray>火花</font>/<font color=BlueViolet>火花</font>/<font color=gold>火墙</font>中的敌人造成总攻击的<font color=gray>20%</font>/<font color=BlueViolet>40%</font>/<font color=gold>60%</font>点火焰伤害。
+- 瞬身时：在你的移动路径上产生<font color=gray>火花</font>/<font color=BlueViolet>火花</font>/<font color=gold>火墙</font>，持续3秒。每秒对处于<font color=gray>火花</font>/<font color=BlueViolet>火花</font>/<font color=gold>火墙</font>中的敌人造成总攻击的<font color=gray>20%</font>/<font color=BlueViolet>40%</font>/<font color=gold>60%</font>点火焰伤害。
 - 使处于火墙中的敌人的移动速度降低50%
 - <font color=gold>使你造成的所有火焰伤害提高25%</font>
 
@@ -30,7 +30,7 @@
 |解锁方式|默认解锁|
 
 #### **核心**
-
+开启主动技能后的火圈可以点燃酒葫芦所喷射出来的酒。
 #### **力量**
 
 #### **敏捷**

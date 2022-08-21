@@ -16,7 +16,7 @@
 
 #### **功效**
 - 受击时：有<font color=gray>20%</font>/<font color=BlueViolet>30%</font>/<font color=gold>40%</font>的几率使敌人[昏迷]1秒。
-- 受到[昏迷]时间降低<font color=gray>0%</font>/<font color=BlueViolet>50%</font>/<font color=gold>免疫</font>。
+- 受到[昏迷]时间降低<font color=gray>0%</font>/<font color=BlueViolet>50%</font>/<font color=gold>100%</font>。
 - <font color=gold>防御+15% </font>
 
 
@@ -40,6 +40,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>

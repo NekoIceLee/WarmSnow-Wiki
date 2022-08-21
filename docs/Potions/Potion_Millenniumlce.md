@@ -10,7 +10,7 @@
 
 #### **力量** 
 - 近战攻击的最后一击：会变为一次造成近战攻击的<font color=gray>230%</font>/<font color=BlueViolet>250%</font>/<font color=gold>270%</font>点冰霜伤害的寒冰斩，并使敌人[冻结]1秒。
-- <font color=gold>如果敌人已经处于[冻结]状态对其造成30点冰霜伤害。</font>
+- <font color=gold>如果敌人已经处于[冻结]状态对其造成攻击力的300%点冰霜伤害。</font>
 
 #### **敏捷**
 - 瞬身：创造1枚冰刃，最大同时存在<font color=gray>1</font>/<font color=BlueViolet>3</font>/<font color=gold>5</font>枚。
@@ -42,6 +42,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>

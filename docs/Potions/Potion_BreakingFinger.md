@@ -4,7 +4,7 @@
 ## 圣物效果
 #### **核心**  
 
-- 主动技能：使你获得[尸变]效果，生命上限提高<font color=gray>30%</font>/<font color=BlueViolet>40%</font>/<font color=gold>50%</font>，造成的伤害提高<font color=gray>20%</font>/<font color=BlueViolet>30%</font>/<font color=gold>40%</font>，但每1秒失去2%的最大生命值，持续10秒。
+- 主动技能：使你获得[尸变]效果，生命上限提高<font color=gray>30%</font>/<font color=BlueViolet>40%</font>/<font color=gold>50%</font>，造成的伤害提高<font color=gray>20%</font>/<font color=BlueViolet>30%</font>/<font color=gold>40%</font>，但每秒失去2%的最大生命值，持续10秒。
 - <font color=gold>在尸变状态下获得强大的吸血能力。</font>
 
 #### **力量** 
@@ -39,6 +39,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>

@@ -4,7 +4,7 @@
 ## 圣物效果
 #### **核心**  
 - 造成飞剑伤害时： 有8%的几率召唤一枚巨型火箭轰击目标区域，造成总攻击的<font color=gray>200%</font>/<font color=BlueViolet>300%</font>/<font color=gold>400%</font> 点火焰伤害 ，并[昏迷] 1秒。
-- 怒气达到100时： 自动消耗全部怒气，使你接下来5秒内火箭触发率提高85%，<font color=gold>并使你的巨型火箭有50%的几率追加触发小型火箭轰炸目，持续5秒。</font>
+- 怒气达到100时： 自动消耗全部怒气，使你接下来5秒内火箭触发率提高85%，<font color=gold>并使你的巨型火箭有50%的几率追加触发小型火箭轰炸目标，持续5秒。</font>
 #### **力量** 
 - 造成飞剑伤害时：有15%几率发射<font color=gray>2</font>/<font color=BlueViolet>4</font>/<font color=gold>6</font>枚小型火箭轰击敌人，每发火箭造成总攻击的<font color=gray>50%</font>/<font color=BlueViolet>50%</font>/<font color=gold>50%</font>点火焰伤害。
 - <font color=gold>小型火箭有30%的几率造成3倍伤害。

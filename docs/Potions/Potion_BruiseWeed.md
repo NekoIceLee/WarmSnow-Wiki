@@ -4,7 +4,7 @@
 ## 圣物效果
 #### **核心**  
 - 使你在使用[药葫芦]时有<font color=gray>20%</font>/<font color=BlueViolet>30%</font>/<font color=gold>40%</font>的几率不消耗[药葫芦]。 
-- 怒气达到100时：自动消耗全部怒气，使你受到的伤害降低<font color=gray>30%</font>/<font color=BlueViolet>40%</font>/<font color=gold>60%</font> <font color=gold>并获得霸体，持续6秒。</font>
+- 怒气达到100时：自动消耗全部怒气，使你受到的伤害降低<font color=gray>30%</font>/<font color=BlueViolet>40%</font>/<font color=gold>60%</font>，<font color=gold>并获得霸体，持续6秒。</font>
 
 #### **力量** 
 - 击杀敌人时：恢复<font color=gray>0.5%</font>/<font color=BlueViolet>1%</font>/<font color=gold>3%</font>的生命值。
@@ -39,6 +39,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>
