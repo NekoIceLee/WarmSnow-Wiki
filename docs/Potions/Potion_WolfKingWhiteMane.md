@@ -1,5 +1,5 @@
-# 狼王白髦
-![狼王白髦](../Img/Texture2D_Potion/狼王白髦.png)
+# 狼王白鬃
+![狼王白鬃](../Img/Texture2D_Potion/狼王白鬃.png)
 ## 简介
 ## 圣物效果
 #### **核心**  
