@@ -1,5 +1,5 @@
-# 须臾之沙
-![须臾之沙](../Img/Texture2D_Potion/须臾之沙.png)
+# 须臾之砂
+![须臾之砂](../Img/Texture2D_Potion/须臾之沙.png)
 ## 简介
 ## 圣物效果
 #### **核心**  
@@ -48,6 +48,5 @@
 ## 补充
 
 ---
-[1]游戏中或许存在保底伤害
 
 <font color=grey>——Page Create By 一只小墨鱼</font>
