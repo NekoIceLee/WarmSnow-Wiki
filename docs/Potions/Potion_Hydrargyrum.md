@@ -33,7 +33,7 @@
 
 
 ## 补充
-
+核心位实际触发词条为造成飞剑伤害时词条
 ---
 
 <font color=grey>——Page Create By 一只小墨鱼</font>
