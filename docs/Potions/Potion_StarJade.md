@@ -41,4 +41,4 @@
 [1]游戏中或许存在保底伤害
 [2]白，紫星辰之玉核心位文案错误，白错误为伤害显示值为100%实为60%，紫错误为固定伤害显示值为0.75
 
-<font color=grey>——Page Create By 一只小墨鱼</font>
+<font color=grey>——Page Create By 一只小墨鱼，L慢郎中</font>
