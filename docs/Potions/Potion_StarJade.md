@@ -11,7 +11,7 @@
 - <font color=gold>微型太阳会在3秒后坍缩成一颗黑洞，每秒对周围造成攻击力100%点伤害并吸引敌人，持续3秒。</font>
 #### **敏捷**
 - 瞬身：向附近随机一个敌人发射一枚陨星造成总攻击<font color=gray>55%</font>/<font color=BlueViolet>55%</font>/<font color=gold>55%</font>点伤害。
-- <font color=BlueViolet>陨星命中敌人时有10%的几率使敌人[昏迷]0.5秒。
+- <font color=BlueViolet>陨星命中敌人时有10%的几率使敌人[昏迷]0.5秒。</font>
 - <font color=gold>陨星有20%的几率造成4倍伤害。</font>
 
 #### **功效**
@@ -36,9 +36,9 @@
 
 
 ## 补充
+白，紫星辰之玉核心位文案错误，白错误为伤害显示值为100%实为60%，紫错误为固定伤害显示值为0.75
 
 ---
-[1]游戏中或许存在保底伤害
-[2]白，紫星辰之玉核心位文案错误，白错误为伤害显示值为100%实为60%，紫错误为固定伤害显示值为0.75
 
-<font color=grey>——Page Create By 一只小墨鱼，L慢郎中</font>
+<font color=grey>——Page Create By 一只小墨鱼</font>
+<font color=grey>——Last Modify By L慢郎中</font>
