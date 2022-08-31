@@ -1,0 +1,934 @@
+// TextControl
+// Token: 0x0600055D RID: 1373 RVA: 0x0003C08C File Offset: 0x0003A28C
+public string[] MagicSwordInfo(MagicSword ms)
+{
+	string[] array = new string[4];
+	array[0] = "";
+	switch (LanguageControl.instance.language)
+	{
+	case Language.ChineseSimplified:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.None:
+			array[0] = "一把普通的剑";
+			break;
+		case MagicSwordName.WuMing:
+			array[0] = "无名";
+			break;
+		case MagicSwordName.HuanMie:
+			array[0] = "幻灭";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[0] = "骤雨";
+			break;
+		case MagicSwordName.DuoRi:
+			array[0] = "堕日";
+			break;
+		case MagicSwordName.ChiYan:
+			array[0] = "炽焰";
+			break;
+		case MagicSwordName.JiuShen:
+			array[0] = "酒神";
+			break;
+		case MagicSwordName.YaRen:
+			array[0] = "牙刃";
+			break;
+		case MagicSwordName.KongMing:
+			array[0] = "空明";
+			break;
+		case MagicSwordName.QingShe:
+			array[0] = "青蛇";
+			break;
+		case MagicSwordName.YangZhan:
+			array[0] = "养战";
+			break;
+		case MagicSwordName.ManWu:
+			array[0] = "蛮武";
+			break;
+		case MagicSwordName.ZhouSha:
+			array[0] = "咒杀";
+			break;
+		case MagicSwordName.XueChou:
+			array[0] = "血仇";
+			break;
+		case MagicSwordName.ShuangJiang:
+			array[0] = "霜降";
+			break;
+		case MagicSwordName.DiaoLing:
+			array[0] = "凋零";
+			break;
+		case MagicSwordName.LieFeng:
+			array[0] = "烈风";
+			break;
+		case MagicSwordName.XuYu:
+			array[0] = "须臾";
+			break;
+		case MagicSwordName.MoYan:
+			array[0] = "墨炎";
+			break;
+		case MagicSwordName.LiuHuo:
+			array[0] = "流火";
+			break;
+		case MagicSwordName.SuiBing:
+			array[0] = "碎冰";
+			break;
+		case MagicSwordName.ZhuGuang:
+			array[0] = "珠光";
+			break;
+		case MagicSwordName.XingChen:
+			array[0] = "星辰";
+			break;
+		case MagicSwordName.LeiXi:
+			array[0] = "雷息";
+			break;
+		case MagicSwordName.WanJun:
+			array[0] = "万钧";
+			break;
+		case MagicSwordName.BaiZu:
+			array[0] = "百足";
+			break;
+		case MagicSwordName.XueShi:
+			array[0] = "血虱";
+			break;
+		case MagicSwordName.BaZhe:
+			array[0] = "霸者";
+			break;
+		case MagicSwordName.KuangTu:
+			array[0] = "狂屠";
+			break;
+		case MagicSwordName.KuangLuan:
+			array[0] = "狂乱";
+			break;
+		case MagicSwordName.ZuiXian:
+			array[0] = "醉仙";
+			break;
+		case MagicSwordName.XueLian:
+			array[0] = "雪莲";
+			break;
+		case MagicSwordName.MingJiang:
+			array[0] = "冥将";
+			break;
+		case MagicSwordName.LangWang:
+			array[0] = "狼王";
+			break;
+		case MagicSwordName.HuaTuo:
+			array[0] = "华佗";
+			break;
+		case MagicSwordName.YingYan:
+			array[0] = "鹰眼";
+			break;
+		case MagicSwordName.TuMie:
+			array[0] = "屠灭";
+			break;
+		case MagicSwordName.TaiZu:
+			array[0] = "太祖";
+			break;
+		case MagicSwordName.PuTong:
+			array[0] = "普通";
+			break;
+		case MagicSwordName.BaoNu:
+			array[0] = "暴怒";
+			break;
+		case MagicSwordName.ShanBeng:
+			array[0] = "山崩";
+			break;
+		case MagicSwordName.FengHuo:
+			array[0] = "风火";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[0] = "黄泉";
+			break;
+		case MagicSwordName.HanChuan:
+			array[0] = "寒川";
+			break;
+		case MagicSwordName.MingZhuang:
+			array[0] = "冥妆";
+			break;
+		case MagicSwordName.SanYuan:
+			array[0] = "三元";
+			break;
+		case MagicSwordName.BaHuang:
+			array[0] = "八荒";
+			break;
+		case MagicSwordName.ShenDong:
+			array[0] = "深冬";
+			break;
+		case MagicSwordName.JingZhe:
+			array[0] = "惊蛰";
+			break;
+		case MagicSwordName.ZhanLong:
+			array[0] = "斩龙";
+			break;
+		case MagicSwordName.ShiLie:
+			array[0] = "时裂";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[0] = "双生";
+			break;
+		}
+		break;
+	case Language.ChineseTraditional:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.None:
+			array[0] = "一把普通的劍";
+			break;
+		case MagicSwordName.WuMing:
+			array[0] = "無名";
+			break;
+		case MagicSwordName.HuanMie:
+			array[0] = "幻滅";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[0] = "驟雨";
+			break;
+		case MagicSwordName.DuoRi:
+			array[0] = "墮日";
+			break;
+		case MagicSwordName.ChiYan:
+			array[0] = "熾焰";
+			break;
+		case MagicSwordName.JiuShen:
+			array[0] = "酒神";
+			break;
+		case MagicSwordName.YaRen:
+			array[0] = "牙刃";
+			break;
+		case MagicSwordName.KongMing:
+			array[0] = "空明";
+			break;
+		case MagicSwordName.QingShe:
+			array[0] = "青蛇";
+			break;
+		case MagicSwordName.YangZhan:
+			array[0] = "養戰";
+			break;
+		case MagicSwordName.ManWu:
+			array[0] = "蠻武";
+			break;
+		case MagicSwordName.ZhouSha:
+			array[0] = "咒殺";
+			break;
+		case MagicSwordName.XueChou:
+			array[0] = "血仇";
+			break;
+		case MagicSwordName.ShuangJiang:
+			array[0] = "霜降";
+			break;
+		case MagicSwordName.DiaoLing:
+			array[0] = "雕零";
+			break;
+		case MagicSwordName.LieFeng:
+			array[0] = "烈風";
+			break;
+		case MagicSwordName.XuYu:
+			array[0] = "須臾";
+			break;
+		case MagicSwordName.MoYan:
+			array[0] = "墨炎";
+			break;
+		case MagicSwordName.LiuHuo:
+			array[0] = "流火";
+			break;
+		case MagicSwordName.SuiBing:
+			array[0] = "碎冰";
+			break;
+		case MagicSwordName.ZhuGuang:
+			array[0] = "珠光";
+			break;
+		case MagicSwordName.XingChen:
+			array[0] = "星辰";
+			break;
+		case MagicSwordName.LeiXi:
+			array[0] = "雷息";
+			break;
+		case MagicSwordName.WanJun:
+			array[0] = "萬鈞";
+			break;
+		case MagicSwordName.BaiZu:
+			array[0] = "百足";
+			break;
+		case MagicSwordName.XueShi:
+			array[0] = "血虱";
+			break;
+		case MagicSwordName.BaZhe:
+			array[0] = "霸者";
+			break;
+		case MagicSwordName.KuangTu:
+			array[0] = "狂屠";
+			break;
+		case MagicSwordName.KuangLuan:
+			array[0] = "狂亂";
+			break;
+		case MagicSwordName.ZuiXian:
+			array[0] = "醉仙";
+			break;
+		case MagicSwordName.XueLian:
+			array[0] = "雪蓮";
+			break;
+		case MagicSwordName.MingJiang:
+			array[0] = "冥將";
+			break;
+		case MagicSwordName.LangWang:
+			array[0] = "狼王";
+			break;
+		case MagicSwordName.HuaTuo:
+			array[0] = "華佗";
+			break;
+		case MagicSwordName.YingYan:
+			array[0] = "鷹眼";
+			break;
+		case MagicSwordName.TuMie:
+			array[0] = "屠滅";
+			break;
+		case MagicSwordName.TaiZu:
+			array[0] = "太祖";
+			break;
+		case MagicSwordName.PuTong:
+			array[0] = "普通";
+			break;
+		case MagicSwordName.BaoNu:
+			array[0] = "暴怒";
+			break;
+		case MagicSwordName.ShanBeng:
+			array[0] = "山崩";
+			break;
+		case MagicSwordName.FengHuo:
+			array[0] = "風火";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[0] = "黃泉";
+			break;
+		case MagicSwordName.HanChuan:
+			array[0] = "寒川";
+			break;
+		case MagicSwordName.MingZhuang:
+			array[0] = "冥妝";
+			break;
+		case MagicSwordName.SanYuan:
+			array[0] = "三元";
+			break;
+		case MagicSwordName.BaHuang:
+			array[0] = "八荒";
+			break;
+		case MagicSwordName.ShenDong:
+			array[0] = "深冬";
+			break;
+		case MagicSwordName.JingZhe:
+			array[0] = "驚蟄";
+			break;
+		case MagicSwordName.ZhanLong:
+			array[0] = "斬龍";
+			break;
+		case MagicSwordName.ShiLie:
+			array[0] = "時裂";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[0] = "雙生";
+			break;
+		}
+		break;
+	case Language.English:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.None:
+			array[0] = "<size=48>An ordinary sword</size>";
+			break;
+		case MagicSwordName.WuMing:
+			array[0] = "<size=48>Nameless</size>";
+			break;
+		case MagicSwordName.HuanMie:
+			array[0] = "<size=48>Annihilation</size>";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[0] = "<size=48>Sudden Rain</size>";
+			break;
+		case MagicSwordName.DuoRi:
+			array[0] = "<size=48>Fallen Sun</size>";
+			break;
+		case MagicSwordName.ChiYan:
+			array[0] = "<size=48>Burning Flame</size>";
+			break;
+		case MagicSwordName.JiuShen:
+			array[0] = "<size=48>Wine God</size>";
+			break;
+		case MagicSwordName.YaRen:
+			array[0] = "<size=48>Toothed Blade</size>";
+			break;
+		case MagicSwordName.KongMing:
+			array[0] = "<size=48>Nirvana</size>";
+			break;
+		case MagicSwordName.QingShe:
+			array[0] = "<size=48>Blue Serpent</size>";
+			break;
+		case MagicSwordName.YangZhan:
+			array[0] = "<size=48>Warmonger</size>";
+			break;
+		case MagicSwordName.ManWu:
+			array[0] = "<size=48>Barbarian Might</size>";
+			break;
+		case MagicSwordName.ZhouSha:
+			array[0] = "<size=48>Death Spell</size>";
+			break;
+		case MagicSwordName.XueChou:
+			array[0] = "<size=48>Blood Feud</size>";
+			break;
+		case MagicSwordName.ShuangJiang:
+			array[0] = "<size=48>Frostfall</size>";
+			break;
+		case MagicSwordName.DiaoLing:
+			array[0] = "<size=48>Entropy</size>";
+			break;
+		case MagicSwordName.LieFeng:
+			array[0] = "<size=48>Wild Gust</size>";
+			break;
+		case MagicSwordName.XuYu:
+			array[0] = "<size=48>Muhurta</size>";
+			break;
+		case MagicSwordName.MoYan:
+			array[0] = "<size=48>Ink Flare</size>";
+			break;
+		case MagicSwordName.LiuHuo:
+			array[0] = "<size=48>Flowing Flames</size>";
+			break;
+		case MagicSwordName.SuiBing:
+			array[0] = "<size=48>Shattered Ice</size>";
+			break;
+		case MagicSwordName.ZhuGuang:
+			array[0] = "<size=48>Pearl Glow</size>";
+			break;
+		case MagicSwordName.XingChen:
+			array[0] = "<size=48>Celestial Light</size>";
+			break;
+		case MagicSwordName.LeiXi:
+			array[0] = "<size=48>Thunder's Breath</size>";
+			break;
+		case MagicSwordName.WanJun:
+			array[0] = "<size=48>Dead Weight</size>";
+			break;
+		case MagicSwordName.BaiZu:
+			array[0] = "<size=48>Centipede</size>";
+			break;
+		case MagicSwordName.XueShi:
+			array[0] = "<size=48>Blood Louse</size>";
+			break;
+		case MagicSwordName.BaZhe:
+			array[0] = "<size=48>Vindicator</size>";
+			break;
+		case MagicSwordName.KuangTu:
+			array[0] = "<size=48>Butcher</size>";
+			break;
+		case MagicSwordName.KuangLuan:
+			array[0] = "<size=48>Maniac</size>";
+			break;
+		case MagicSwordName.ZuiXian:
+			array[0] = "<size=48>Wine Fairy</size>";
+			break;
+		case MagicSwordName.XueLian:
+			array[0] = "<size=48>Snow Lotus</size>";
+			break;
+		case MagicSwordName.MingJiang:
+			array[0] = "<size=48>Spirit Marshal</size>";
+			break;
+		case MagicSwordName.LangWang:
+			array[0] = "<size=48>Wolf King</size>";
+			break;
+		case MagicSwordName.HuaTuo:
+			array[0] = "<size=48>Healer</size>";
+			break;
+		case MagicSwordName.YingYan:
+			array[0] = "<size=48>Hawkeye</size>";
+			break;
+		case MagicSwordName.TuMie:
+			array[0] = "<size=48>Extermination</size>";
+			break;
+		case MagicSwordName.TaiZu:
+			array[0] = "<size=48>Great Ancestor</size>";
+			break;
+		case MagicSwordName.PuTong:
+			array[0] = "<size=48>Truly Ordinary</size>";
+			break;
+		case MagicSwordName.BaoNu:
+			array[0] = "<size=48>Mortal Fury</size>";
+			break;
+		case MagicSwordName.ShanBeng:
+			array[0] = "<size=48>Avalanche</size>";
+			break;
+		case MagicSwordName.FengHuo:
+			array[0] = "<size=48>Dead Weight</size>";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[0] = "<size=48>Acheron</size>";
+			break;
+		case MagicSwordName.HanChuan:
+			array[0] = "<size=48>Cold Stream</size>";
+			break;
+		case MagicSwordName.MingZhuang:
+			array[0] = "<size=48>Dead Wedding</size>";
+			break;
+		case MagicSwordName.SanYuan:
+			array[0] = "<size=48>Trinity</size>";
+			break;
+		case MagicSwordName.BaHuang:
+			array[0] = "<size=48>BaHuang</size>";
+			break;
+		case MagicSwordName.ShenDong:
+			array[0] = "<size=48>Deep Cold</size>";
+			break;
+		case MagicSwordName.JingZhe:
+			array[0] = "<size=48>Thunder Waker</size>";
+			break;
+		case MagicSwordName.ZhanLong:
+			array[0] = "<size=48>Drgon Slash</size>";
+			break;
+		case MagicSwordName.ShiLie:
+			array[0] = "<size=48>Time Breaker</size>";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[0] = "<size=48>Twin Born</size>";
+			break;
+		}
+		break;
+	case Language.Japanese:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.None:
+			array[0] = "普通の剣";
+			break;
+		case MagicSwordName.WuMing:
+			array[0] = "無名";
+			break;
+		case MagicSwordName.HuanMie:
+			array[0] = "幻滅";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[0] = "驟雨";
+			break;
+		case MagicSwordName.DuoRi:
+			array[0] = "堕日";
+			break;
+		case MagicSwordName.ChiYan:
+			array[0] = "灼炎";
+			break;
+		case MagicSwordName.JiuShen:
+			array[0] = "酒神";
+			break;
+		case MagicSwordName.YaRen:
+			array[0] = "牙刃";
+			break;
+		case MagicSwordName.KongMing:
+			array[0] = "空明";
+			break;
+		case MagicSwordName.QingShe:
+			array[0] = "青蛇";
+			break;
+		case MagicSwordName.YangZhan:
+			array[0] = "養戦";
+			break;
+		case MagicSwordName.ManWu:
+			array[0] = "蛮武";
+			break;
+		case MagicSwordName.ZhouSha:
+			array[0] = "呪殺";
+			break;
+		case MagicSwordName.XueChou:
+			array[0] = "血仇";
+			break;
+		case MagicSwordName.ShuangJiang:
+			array[0] = "霜降";
+			break;
+		case MagicSwordName.DiaoLing:
+			array[0] = "凋零";
+			break;
+		case MagicSwordName.LieFeng:
+			array[0] = "烈風";
+			break;
+		case MagicSwordName.XuYu:
+			array[0] = "須臾";
+			break;
+		case MagicSwordName.MoYan:
+			array[0] = "墨炎";
+			break;
+		case MagicSwordName.LiuHuo:
+			array[0] = "流火";
+			break;
+		case MagicSwordName.SuiBing:
+			array[0] = "碎氷";
+			break;
+		case MagicSwordName.ZhuGuang:
+			array[0] = "珠光";
+			break;
+		case MagicSwordName.XingChen:
+			array[0] = "星辰";
+			break;
+		case MagicSwordName.LeiXi:
+			array[0] = "雷気";
+			break;
+		case MagicSwordName.WanJun:
+			array[0] = "万鈞";
+			break;
+		case MagicSwordName.BaiZu:
+			array[0] = "百足";
+			break;
+		case MagicSwordName.XueShi:
+			array[0] = "血虫";
+			break;
+		case MagicSwordName.BaZhe:
+			array[0] = "霸者";
+			break;
+		case MagicSwordName.KuangTu:
+			array[0] = "狂屠";
+			break;
+		case MagicSwordName.KuangLuan:
+			array[0] = "狂乱";
+			break;
+		case MagicSwordName.ZuiXian:
+			array[0] = "酔仙";
+			break;
+		case MagicSwordName.XueLian:
+			array[0] = "雪蓮";
+			break;
+		case MagicSwordName.MingJiang:
+			array[0] = "冥将";
+			break;
+		case MagicSwordName.LangWang:
+			array[0] = "狼王";
+			break;
+		case MagicSwordName.HuaTuo:
+			array[0] = "華佗";
+			break;
+		case MagicSwordName.YingYan:
+			array[0] = "鷹眼";
+			break;
+		case MagicSwordName.TuMie:
+			array[0] = "屠滅";
+			break;
+		case MagicSwordName.TaiZu:
+			array[0] = "太祖";
+			break;
+		case MagicSwordName.PuTong:
+			array[0] = "真の平凡";
+			break;
+		case MagicSwordName.BaoNu:
+			array[0] = "激怒";
+			break;
+		case MagicSwordName.ShanBeng:
+			array[0] = "山崩";
+			break;
+		case MagicSwordName.FengHuo:
+			array[0] = "風火";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[0] = "黄泉";
+			break;
+		case MagicSwordName.HanChuan:
+			array[0] = "寒川";
+			break;
+		case MagicSwordName.MingZhuang:
+			array[0] = "冥妝";
+			break;
+		case MagicSwordName.SanYuan:
+			array[0] = "三元";
+			break;
+		case MagicSwordName.BaHuang:
+			array[0] = "八荒";
+			break;
+		case MagicSwordName.ShenDong:
+			array[0] = "深冬";
+			break;
+		case MagicSwordName.JingZhe:
+			array[0] = "驚蟄";
+			break;
+		case MagicSwordName.ZhanLong:
+			array[0] = "斬龍";
+			break;
+		case MagicSwordName.ShiLie:
+			array[0] = "時裂";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[0] = "雙生";
+			break;
+		}
+		break;
+	}
+	array[1] = "";
+	switch (LanguageControl.instance.language)
+	{
+	case Language.ChineseSimplified:
+		switch (ms.Level)
+		{
+		case 0:
+			array[1] = "稀有度： 精良";
+			break;
+		case 1:
+			array[1] = "稀有度： 史诗";
+			break;
+		case 2:
+			array[1] = "稀有度： 传说";
+			break;
+		case 3:
+			array[1] = "稀有度： 绝世";
+			break;
+		}
+		break;
+	case Language.ChineseTraditional:
+		switch (ms.Level)
+		{
+		case 0:
+			array[1] = "稀有度： 精良";
+			break;
+		case 1:
+			array[1] = "稀有度： 史詩";
+			break;
+		case 2:
+			array[1] = "稀有度： 傳說";
+			break;
+		case 3:
+			array[1] = "稀有度： 絕世";
+			break;
+		}
+		break;
+	case Language.English:
+		switch (ms.Level)
+		{
+		case 0:
+			array[1] = "Rare";
+			break;
+		case 1:
+			array[1] = "Epic";
+			break;
+		case 2:
+			array[1] = "Legendary";
+			break;
+		case 3:
+			array[1] = "Impossible";
+			break;
+		}
+		break;
+	case Language.Japanese:
+		switch (ms.Level)
+		{
+		case 0:
+			array[1] = "レア度： 優良";
+			break;
+		case 1:
+			array[1] = "レア度： 史詩";
+			break;
+		case 2:
+			array[1] = "レア度： 伝説";
+			break;
+		case 3:
+			array[1] = "レア度： 絶世";
+			break;
+		}
+		break;
+	}
+	array[2] = "";
+	switch (LanguageControl.instance.language)
+	{
+	case Language.ChineseSimplified:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.WuMing:
+			array[2] = "七剑修罗专属";
+			break;
+		case MagicSwordName.HuanMie:
+			array[2] = "七剑修罗专属";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[2] = "无量尊者专属";
+			break;
+		case MagicSwordName.DuoRi:
+			array[2] = "无量尊者专属";
+			break;
+		case MagicSwordName.ChiYan:
+			array[2] = "神饮明王专属";
+			break;
+		case MagicSwordName.JiuShen:
+			array[2] = "神饮明王专属";
+			break;
+		case MagicSwordName.LeiXi:
+			array[2] = "圣威怒雷金刚专属";
+			break;
+		case MagicSwordName.WanJun:
+			array[2] = "圣威怒雷金刚专属";
+			break;
+		case MagicSwordName.BaiZu:
+			array[2] = "三尸慈姑娘娘专属";
+			break;
+		case MagicSwordName.XueShi:
+			array[2] = "三尸慈姑娘娘专属";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[2] = "三川苦寒菩萨专属";
+			break;
+		case MagicSwordName.HanChuan:
+			array[2] = "三川苦寒菩萨专属";
+			break;
+		case MagicSwordName.ShiLie:
+			array[2] = "神行迷踪天尊专属";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[2] = "神行迷踪天尊专属";
+			break;
+		}
+		break;
+	case Language.ChineseTraditional:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.WuMing:
+			array[2] = "七劍修羅專屬";
+			break;
+		case MagicSwordName.HuanMie:
+			array[2] = "七劍修羅專屬";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[2] = "無量尊者專屬";
+			break;
+		case MagicSwordName.DuoRi:
+			array[2] = "無量尊者專屬";
+			break;
+		case MagicSwordName.ChiYan:
+			array[2] = "神飲明王專屬";
+			break;
+		case MagicSwordName.JiuShen:
+			array[2] = "神飲明王專屬";
+			break;
+		case MagicSwordName.LeiXi:
+			array[2] = "聖威怒雷金剛專屬";
+			break;
+		case MagicSwordName.WanJun:
+			array[2] = "聖威怒雷金剛專屬";
+			break;
+		case MagicSwordName.BaiZu:
+			array[2] = "三屍慈姑娘娘專屬";
+			break;
+		case MagicSwordName.XueShi:
+			array[2] = "三屍慈姑娘娘專屬";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[2] = "三川苦寒菩薩專屬";
+			break;
+		case MagicSwordName.HanChuan:
+			array[2] = "三川苦寒菩薩專屬";
+			break;
+		case MagicSwordName.ShiLie:
+			array[2] = "神行迷蹤天尊專屬";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[2] = "神行迷蹤天尊專屬";
+			break;
+		}
+		break;
+	case Language.English:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.WuMing:
+			array[2] = "Seven-Sword Shura";
+			break;
+		case MagicSwordName.HuanMie:
+			array[2] = "Seven-Sword Shura";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[2] = "Infinite Arhat";
+			break;
+		case MagicSwordName.DuoRi:
+			array[2] = "Infinite Arhat";
+			break;
+		case MagicSwordName.ChiYan:
+			array[2] = "Carousing Acalantha";
+			break;
+		case MagicSwordName.JiuShen:
+			array[2] = "Carousing Acalantha";
+			break;
+		case MagicSwordName.LeiXi:
+			array[2] = "Thunderfury Vajra";
+			break;
+		case MagicSwordName.WanJun:
+			array[2] = "Thunderfury Vajra";
+			break;
+		case MagicSwordName.BaiZu:
+			array[2] = "Mother Trinity";
+			break;
+		case MagicSwordName.XueShi:
+			array[2] = "Mother Trinity";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[2] = "Bitter River Bodhi";
+			break;
+		case MagicSwordName.HanChuan:
+			array[2] = "Bitter River Bodhi";
+			break;
+		case MagicSwordName.ShiLie:
+			array[2] = "Supreme Bodhi";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[2] = "Supreme Bodhi";
+			break;
+		}
+		break;
+	case Language.Japanese:
+		switch (ms.magicSwordName)
+		{
+		case MagicSwordName.WuMing:
+			array[2] = "七剣修羅専属";
+			break;
+		case MagicSwordName.HuanMie:
+			array[2] = "七剣修羅専属";
+			break;
+		case MagicSwordName.ZhouYu:
+			array[2] = "無量尊者専属";
+			break;
+		case MagicSwordName.DuoRi:
+			array[2] = "無量尊者専属";
+			break;
+		case MagicSwordName.ChiYan:
+			array[2] = "神飲明王専属";
+			break;
+		case MagicSwordName.JiuShen:
+			array[2] = "神飲明王専属";
+			break;
+		case MagicSwordName.LeiXi:
+			array[2] = "圣威怒雷金剛専属";
+			break;
+		case MagicSwordName.WanJun:
+			array[2] = "圣威怒雷金剛専属";
+			break;
+		case MagicSwordName.BaiZu:
+			array[2] = "三尸慈姑娘娘専属";
+			break;
+		case MagicSwordName.XueShi:
+			array[2] = "三尸慈姑娘娘専属";
+			break;
+		case MagicSwordName.HuangQuan:
+			array[2] = "三川苦寒菩萨專屬";
+			break;
+		case MagicSwordName.HanChuan:
+			array[2] = "三川苦寒菩萨專屬";
+			break;
+		case MagicSwordName.ShiLie:
+			array[2] = "神行迷蹤天尊專屬";
+			break;
+		case MagicSwordName.ShuangSheng:
+			array[2] = "神行迷蹤天尊專屬";
+			break;
+		}
+		break;
+	}
+	switch (LanguageControl.instance.language)
+	{
+	case Language.ChineseSimplified:
+		array[3] = "神兵特效：";
+		break;
+	case Language.ChineseTraditional:
+		array[3] = "神兵特效：";
+		break;
+	case Language.English:
+		array[3] = "Excalibur Effect:";
+		break;
+	case Language.Japanese:
+		array[3] = "神兵特殊効果：";
+		break;
+	}
+	return array;
+}

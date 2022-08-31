@@ -1,0 +1,847 @@
+// TextControl
+// Token: 0x06000560 RID: 1376 RVA: 0x0003DF6C File Offset: 0x0003C16C
+public ValueTuple<string, string> MagicSwordSpecialEntryDescribe(MagicSwordName mn)
+{
+	string item = "";
+	string item2 = "";
+	switch (LanguageControl.instance.language)
+	{
+	case Language.ChineseSimplified:
+		switch (mn)
+		{
+		case MagicSwordName.WuMing:
+			item = "[顺势之刃]造成的伤害提高30%，[百刃倾泻]触发几率提高10%。";
+			item2 = "当你同时拥有[百刃倾泻]与[顺势之刃]时，你触发百刃倾泻时，将会在飞剑命中时，在敌人身上触发顺势之刃。";
+			break;
+		case MagicSwordName.HuanMie:
+			item = "当你触发[冷血]时，[剑返]冷却时间减少1秒。";
+			item2 = "当你的[剑返]处于冷却状态时，你的所有伤害提高50%。";
+			break;
+		case MagicSwordName.ZhouYu:
+			item = "在你使用[剑仙]或触发[剑神]时，飞剑伤害提高100%。";
+			item2 = "移除[剑热槽]限制。";
+			break;
+		case MagicSwordName.DuoRi:
+			item = "当你的贯日之光击中敌人时会额外产生一次爆炸，造成该次伤害70%的范围伤害。";
+			item2 = "爆炸范围提高50%，爆炸伤害提高100%。";
+			break;
+		case MagicSwordName.ChiYan:
+			item = "使你的[燃刃]伤害提高400%。";
+			item2 = "触发[燃刃]时，会朝攻击范围发出一道火焰剑气，造成相当于该次伤害100%的伤害。";
+			break;
+		case MagicSwordName.JiuShen:
+			item = "[爆燃]伤害提高80%。";
+			item2 = "[爆燃]会产生巨大火环向四周扩散，造成相当于该次伤害75%的伤害。";
+			break;
+		case MagicSwordName.YaRen:
+			item = "当你携带[锋锐之牙]时，你的近战攻击速度提高25%。";
+			item2 = "牙刃提高的近战攻击速度额外提高35%。";
+			break;
+		case MagicSwordName.KongMing:
+			item = "当你携带[凝气草]时，你的近战攻击将会追加气刃，飞剑将会追加气爆，伤害相当于该次伤害的15%。";
+			item2 = "空明造成的气刃、气爆的伤害额外提高25%。";
+			break;
+		case MagicSwordName.QingShe:
+			item = "当你同时携带[尸变断指]和[雄黄]时，你的毒伤害提高50%。";
+			item2 = "青蛇增加的毒伤害额外提高75%。";
+			break;
+		case MagicSwordName.YangZhan:
+			item = "当你携带[跌打草]时，近战攻击有3%的几率掉落恢复球。";
+			item2 = "养战掉落恢复球的几率提高5%。";
+			break;
+		case MagicSwordName.ManWu:
+			item = "当你携带[大骨]时，你的近战攻击有5%的几率触发一次[大骨]核心槽的效果。";
+			item2 = "蛮武的触发几率额外提高10%。";
+			break;
+		case MagicSwordName.ZhouSha:
+			item = "当你的功效槽携带[憎恨之心]时，效果翻倍，但你受到一次伤害后就会直接死亡。";
+			item2 = "使你受到伤害时有50%的几率不会死亡。";
+			break;
+		case MagicSwordName.XueChou:
+			item = "当你的力量槽携带[血玉髓]时，邪恶之眼的持续时间+100%。";
+			item2 = "当你携带[血玉髓]时，你造成伤害时，有5%的几率使你造成的所有伤害提高30%，防御提高20%，持续5秒。";
+			break;
+		case MagicSwordName.ShuangJiang:
+			item = "当你的力量槽携带[千年寒冰]时，每次近战攻击都15%的几率使敌人[冻结]0.5秒。";
+			item2 = "当你的力量槽携带[千年寒冰]时，你对处于[冻结]状态的敌人造成伤害时，会向四周射出6枚寒冰碎片。";
+			break;
+		case MagicSwordName.DiaoLing:
+			item = "当你携带[死之莲]时，死之花瓣造成伤害时15%的几率造成2倍伤害。";
+			item2 = "使你的死之花瓣可以穿透敌人。";
+			break;
+		case MagicSwordName.LieFeng:
+			item = "当你的核心槽携带[踏风草]时，核心槽技能触发几率提高15%。";
+			item2 = "烈风提高的核心槽技能触发几率额外提高20%。";
+			break;
+		case MagicSwordName.XuYu:
+			item = "当你的核心槽携带[须臾之砂]的时候，其攻速和移动速度加成提高40%。";
+			item2 = "须臾提供的攻速和移动速度加成提高80%。";
+			break;
+		case MagicSwordName.MoYan:
+			item = "当你携带[墨火结晶]时，你的近战攻击有15%的几率打出墨火刃，追加50%的<color=#CFB769>真实</color><color=#BF2B00>火焰伤害</color>。";
+			item2 = "墨炎的触发几率提高85%。";
+			break;
+		case MagicSwordName.LiuHuo:
+			item = "当你同时携带[醉仙酿]和[火硝石]时，你的<color=#BF2B00>火焰伤害</color>提高50%。";
+			item2 = "流火增加的火焰伤害提高75%。";
+			break;
+		case MagicSwordName.SuiBing:
+			item = "当你携带[破冰石]时，你的近战攻击有5%的几率触发一次[破冰石]核心槽的效果。";
+			item2 = "碎冰的触发几率额外提高10%。";
+			break;
+		case MagicSwordName.ZhuGuang:
+			item = "当你携带[珍珠]时，你获得的护盾效果+15%。";
+			item2 = "珠光提供的护盾加成提高25%。";
+			break;
+		case MagicSwordName.XingChen:
+			item = "当你携带[星辰之玉]时，你的近战和飞剑攻击有6%的几率触发[星辰之玉]的核心槽效果。";
+			item2 = "当你的功效槽携带[星辰之玉]时，你同时获得太阳和月亮祝福。";
+			break;
+		case MagicSwordName.LeiXi:
+			item = "当你拥有[迅影]时，你的近战最后一击会使你的下一次[迅雷闪]升级为[真・迅雷闪]";
+			item2 = "你的近战攻击有10%的几率使你在3秒内所有的[迅雷闪]都变为[真・迅雷闪]";
+			break;
+		case MagicSwordName.WanJun:
+			item = "当你拥有[蛮雷]时，通过[雷]触发的怒雷会额外对目标和目标周围引发一次雷暴脉冲，造成相当于你攻击力60%的闪电伤害。";
+			item2 = "当你同时拥有[蛮雷]和[永劫天雷]时，通过[雷]触发的怒雷造成的伤害提高50%，并且必定触发[永劫天雷]";
+			break;
+		case MagicSwordName.BaiZu:
+			item = "当你的[毒刃]触发时，额外追加200%的近战伤害。";
+			item2 = "当你同时拥有[毒刃]和[判官时刻]时，触发[毒刃]时有15%的几率触发一次[判官时刻]";
+			break;
+		case MagicSwordName.XueShi:
+			item = "当你拥有[血溅]时，你的血弹产生的血球将会变为血虱自动攻击周围的敌人。血虱会每秒造成相当于你攻击力10%的伤害，并为你恢复伤害50%的生命值。";
+			item2 = "当血虱对敌人累计造成相当于你攻击力100%的伤害时，会产生一次血爆对周围的敌人造成200%的伤害，并自动返回到你身上。";
+			break;
+		case MagicSwordName.BaZhe:
+			item = "当你拥有[神勇无惧]时，你的近战攻击会对前方造成大范围的震击，额外造成你攻击力100%的伤害，但你的攻击速度降低60%，移动速度降低25%。";
+			item2 = "当你同时拥有[神勇无惧]和[不动如山]时，你的震击造成的伤害提高200%，范围提高300%。";
+			break;
+		case MagicSwordName.KuangTu:
+			item = "当你拥有[走火入魔]时，失去其攻击力加成与防御损失，但你造成伤害时15%的几率造成300%的额外伤害。";
+			item2 = "狂屠的触发几率提高25%";
+			break;
+		case MagicSwordName.KuangLuan:
+			item = "当你拥有[狂热]时，当[狂热]叠加到20层时，你的所有伤害提高30%，持续5秒。";
+			item2 = "当你拥有[愈演愈烈]时，当敌人的[愈演愈烈]叠加到10层时，会立刻对敌人造成500%的近战伤害。";
+			break;
+		case MagicSwordName.ZuiXian:
+			item = "当你携带[醉仙酿]时，你躲闪攻击时，会对敌人造成一次相当与你近战伤害550%的伤害。";
+			item2 = "当你同时携带[醉仙酿]和[白虎之魂]时，你的近战攻击有5%的几率直接触发[醉仙酿]和[白虎之魂]的核心槽效果。";
+			break;
+		case MagicSwordName.XueLian:
+			item = "当你的核心槽携带[死之莲]，同时任意槽携带[北风花]时，死之莲花瓣会造成额外50%的冰霜伤害，并有15%的几率[冻结]敌人1秒。";
+			item2 = "当你的核心槽携带[死之莲]，同时任意槽携带[北风花]时，你造成近战伤害时都有5%的几率直接触发死之莲的核心槽效果。";
+			break;
+		case MagicSwordName.MingJiang:
+			item = "当你的核心槽携带[黄纸]时，黄纸的伤害提高50%。";
+			item2 = "当你的核心槽携带[黄纸]时，将无视[黄纸]等级和拥有黄纸枚数，必定发动[法天象地]";
+			break;
+		case MagicSwordName.LangWang:
+			item = "当你同时携带[锋锐之牙]和[狼王白鬃]时，你对处于[流血]状态的敌人造成的伤害+60%。";
+			item2 = "当你同时携带[锋锐之牙]和[狼王白鬃]时，你对处于[流血]状态的敌人造成伤害时有15%的几率使目标向周围射出6枚血弹，造成相当于攻击力250%的伤害。";
+			break;
+		case MagicSwordName.HuaTuo:
+			item = "当你同时拥有[血灵芝]和[跌打草]时，当你造成伤害时，有15%几率获得所有伤害提升20%、防御提高20%或者每秒恢复1%的生命值其中任意一个效果，持续5秒。";
+			item2 = "华佗提供的增益效果提高100%。";
+			break;
+		case MagicSwordName.YingYan:
+			item = "当你拥有[飞剑强化]时，使你的[飞剑强化]效果翻倍";
+			item2 = "[百步穿杨]的触发几率提高20%";
+			break;
+		case MagicSwordName.TuMie:
+			item = "[摧枯拉朽]的现在对生命低于60的敌人开始生效，[不二打]对生命高于80%的敌人生效。";
+			item2 = "当你同时拥有[摧枯拉朽]与[不二打]时，你击杀的敌人会产生爆炸，对周围的敌人造成550%的伤害。";
+			break;
+		case MagicSwordName.TaiZu:
+			item = "每拥有一个[通用技能]你造成的所有伤害提高5%";
+			item2 = "当你拥有超过8个[通用技能]时，你造成的所有伤害额外提高100%";
+			break;
+		case MagicSwordName.PuTong:
+			item = "近战和飞剑攻击时：有6%的几率造成666%的伤害。";
+			item2 = "你造成任意伤害时：有0.01%的几率发动神罗天真・程序员之怒";
+			break;
+		case MagicSwordName.BaoNu:
+			item = "当你核心槽携带[狂暴之血]时，怒气爆发触发几率提高10%";
+			item2 = "当你核心槽携带[狂暴之血]时，你的怒气爆发结束时，会发动一次[阿修罗之怒]，对附近大范围敌人造成2400%的近战伤害。";
+			break;
+		case MagicSwordName.ShanBeng:
+			item = "当你同时携带[大骨]和[破冰石]时，你的近战攻击有15%的几率触发山崩，对前方大范围造成冲击伤害，造成200%的近战攻击。对[昏迷]或[冻结]的敌人造成的伤害提高100%。";
+			item2 = "山崩会向当前方向连续触发3次。";
+			break;
+		case MagicSwordName.FengHuo:
+			item = "当你同时携带[火硝石]和[凝气草]时，当你造成伤害时有15%的几率召唤3道火龙卷向3个方向飞出去，对触碰到的敌人造成105%的火焰伤害。";
+			item2 = "火龙卷数量提高一倍。";
+			break;
+		case MagicSwordName.HuangQuan:
+			item = "触发[极寒]时有70%的几率在目标脚下召唤一滩苦寒黄泉，苦寒黄泉会对处于其中的敌人造成冰霜伤害，每秒造成80%攻击的冰霜伤害，持续5秒。处于苦寒黄泉中的敌人将被视为[冻结]状态。";
+			item2 = "苦寒黄泉造成的伤害提高100%，每次对敌人造成伤害都会使其范围扩大。";
+			break;
+		case MagicSwordName.HanChuan:
+			item = "[冰刃]的暴击率提高10%，并可以触发[极寒]效果";
+			item2 = "当你用飞剑触发[极寒]时，会对目标造成100%的冰霜伤害，并向周围发射6枚弱化的[冰刃]造成40%的冰霜伤害。";
+			break;
+		case MagicSwordName.MingZhuang:
+			item = "当你的核心槽携带[鬼妃断发]时，[死咒]会每秒对目标造成相当于你攻击力33%的真实伤害。";
+			item2 = "当你的核心槽携带[鬼妃断发]时，[死咒]每次造成伤害时，都有33%的概率发射鬼发对目标以及周围的敌人造成300%的真实伤害，并附加5秒的[燃烧],[流血]以及[中毒]。";
+			break;
+		case MagicSwordName.SanYuan:
+			item = "当你携带[三色结晶]时，你的近战攻击有15%几率随机追加10%的火焰、闪电或冰霜伤害中的一种元素伤害。";
+			item2 = "当你携带[三色结晶]时，你的近战或飞剑攻击都会附带15%的火焰、闪电、冰霜伤害。";
+			break;
+		case MagicSwordName.BaHuang:
+			item = "当你携带[猛虎之印]时，你的近战攻击的第一击会发动横扫千军，攻击范围增大，造成的伤害提高75%";
+			item2 = "当你携带[猛虎之印]时，你的近战最后一击会发动一次超级八荒破，对周围的敌人造成320%的近战伤害，并击晕敌人。";
+			break;
+		case MagicSwordName.ShenDong:
+			item = "当你同时拥有[北风花]和[千年寒冰]时，你的冰霜伤害提高40%";
+			item2 = "深冬增加的冰霜伤害额外提高80%";
+			break;
+		case MagicSwordName.JingZhe:
+			item = "当你同时拥有[引雷索]和[响雷石]时，你的闪电伤害提高40%";
+			item2 = "惊蛰增加的闪电伤害额外提高80%";
+			break;
+		case MagicSwordName.ZhanLong:
+			item = "[斩龙诀]有15%的几率造成3倍伤害";
+			item2 = "当你拥有[斩龙诀]时，你的每一刀都会被斩龙诀替代，但[斩龙诀]造成的伤害会降低75%，不再受到近战攻击速度加成，但近战攻击速度会转变为近战攻击加成。";
+			break;
+		case MagicSwordName.ShiLie:
+			item = "你的[神行一闪]会使敌人获得[时之裂]效果，使其每秒受到攻击力60%的伤害，持续10秒。";
+			item2 = "[时之裂]可以最大叠加5层，每层时之裂会使敌人受到的所有伤害提高30%，当你使用[剑心]收刀时，直接引爆所有敌人身上的[时之裂]";
+			break;
+		case MagicSwordName.ShuangSheng:
+			item = "当你拥有[梦缠]时，[梦缠]对处于[时之破碎]的敌人触发4倍伤害的几率提高40%";
+			item2 = "当你拥有[迷踪]时，你的瞬身将可以直接发射[幻刃]。并且幻刃的伤害提高250%";
+			break;
+		}
+		break;
+	case Language.ChineseTraditional:
+		switch (mn)
+		{
+		case MagicSwordName.WuMing:
+			item = "[順勢之刃]造成的傷害提高30%，[百刃傾瀉]觸發幾率提高10%。";
+			item2 = "當你同時擁有[百刃傾瀉]與[順勢之刃]時，你觸發百刃傾瀉時，將會在飛劍命中時，在敵人身上觸發順勢之刃。";
+			break;
+		case MagicSwordName.HuanMie:
+			item = "當你觸發[冷血]時，[劍返]冷卻時間減少1秒。";
+			item2 = "當你的[劍返]處於冷卻狀態時，你的所有傷害提高50%。";
+			break;
+		case MagicSwordName.ZhouYu:
+			item = "在你使用[劍仙]或觸發[劍神]時，飛劍傷害提高100%。";
+			item2 = "移除[劍熱槽]限製。";
+			break;
+		case MagicSwordName.DuoRi:
+			item = "當你的貫日之光擊中敵人時會額外產生一次爆炸，造成該次傷害70%的範圍傷害。";
+			item2 = "爆炸範圍提高50%，爆炸傷害提高100%。";
+			break;
+		case MagicSwordName.ChiYan:
+			item = "使你的[燃刃]傷害提高400%。";
+			item2 = "觸發[燃刃]時，會朝攻擊範圍發出一道火焰劍氣，造成相當於該次傷害100%的傷害。";
+			break;
+		case MagicSwordName.JiuShen:
+			item = "[爆燃]傷害提高80%。";
+			item2 = "[爆燃]會產生巨大火環向四周擴散，造成相當於該次傷害75%的傷害。";
+			break;
+		case MagicSwordName.YaRen:
+			item = "當你攜帶[鋒銳之牙]時，你的近戰攻擊速度提高25%。";
+			item2 = "牙刃提高的近戰攻擊速度額外提高35%。";
+			break;
+		case MagicSwordName.KongMing:
+			item = "當你攜帶[凝氣草]時，你的近戰攻擊將會追加氣刃，飛劍將會追加氣爆，傷害相當於該次傷害的15%。";
+			item2 = "空明造成的氣刃、氣爆的傷害額外提高25%。";
+			break;
+		case MagicSwordName.QingShe:
+			item = "當你同時攜帶[屍變斷指]和[雄黃]時，你的毒傷害提高50%。";
+			item2 = "青蛇增加的毒傷害額外提高75%。";
+			break;
+		case MagicSwordName.YangZhan:
+			item = "當你攜帶[跌打草]時，近戰攻擊有3%的幾率掉落恢復球。";
+			item2 = "養戰掉落恢復球的幾率提高5%。";
+			break;
+		case MagicSwordName.ManWu:
+			item = "當你攜帶[大骨]時，你的近戰攻擊有5%的幾率觸發一次[大骨]核心槽的效果。";
+			item2 = "蠻武的觸發幾率額外提高10%。";
+			break;
+		case MagicSwordName.ZhouSha:
+			item = "當你的功效槽攜帶[憎恨之心]時，效果翻倍，但你受到一次傷害後就會直接死亡。";
+			item2 = "使你受到傷害時有50%的幾率不會死亡。";
+			break;
+		case MagicSwordName.XueChou:
+			item = "當你的力量槽攜帶[血玉髓]時，邪惡之眼的持續時間+100%。";
+			item2 = "當你攜帶[血玉髓]時，你造成傷害時，有5%的幾率使你造成的所有傷害提高30%，防禦提高20%，持續5秒。";
+			break;
+		case MagicSwordName.ShuangJiang:
+			item = "當你的力量槽攜帶[千年寒冰]時，每次近戰攻擊都15%的幾率使敵人[凍結]0.5秒。";
+			item2 = "當你的力量槽攜帶[千年寒冰]時，你對處於[凍結]狀態的敵人造成傷害時，會向四周射出6枚寒冰碎片。";
+			break;
+		case MagicSwordName.DiaoLing:
+			item = "當你攜帶[死之蓮]時，死之花瓣造成傷害時15%的幾率造成2倍傷害。";
+			item2 = "使你的死之花瓣可以穿透敵人。";
+			break;
+		case MagicSwordName.LieFeng:
+			item = "當你的核心槽攜帶[踏風草]時，核心槽技能觸發幾率提高15%。";
+			item2 = "烈風提高的核心槽技能觸發幾率額外提高20%。";
+			break;
+		case MagicSwordName.XuYu:
+			item = "當你的核心槽攜帶[須臾之砂]的時候，其攻速和移動速度加成提高40%。";
+			item2 = "須臾提供的攻速和移動速度加成提高80%。";
+			break;
+		case MagicSwordName.MoYan:
+			item = "當你攜帶[墨火結晶]時，你的近戰攻擊有15%的幾率打出墨火刃，追加50%的<color=#CFB769>真實</color><color=#BF2B00>火焰傷害</color>。";
+			item2 = "墨炎的觸發幾率提高85%。";
+			break;
+		case MagicSwordName.LiuHuo:
+			item = "當你同時攜帶[醉仙釀]和[火硝石]時，你的<color=#BF2B00>火焰傷害</color>提高50%。";
+			item2 = "流火增加的火焰傷害提高75%。";
+			break;
+		case MagicSwordName.SuiBing:
+			item = "當你攜帶[破冰石]時，你的近戰攻擊有5%的幾率觸發一次[破冰石]核心槽的效果。";
+			item2 = "碎冰的觸發幾率額外提高10%。";
+			break;
+		case MagicSwordName.ZhuGuang:
+			item = "當你攜帶[珍珠]時，你獲得的護盾效果+15%。";
+			item2 = "珠光提供的護盾加成提高25%。";
+			break;
+		case MagicSwordName.XingChen:
+			item = "當你攜帶[星辰之玉]時，你的近戰和飛劍攻擊有6%的幾率觸發[星辰之玉]的核心槽效果。";
+			item2 = "當你的功效槽攜帶[星辰之玉]時，你同時獲得太陽和月亮祝福。";
+			break;
+		case MagicSwordName.LeiXi:
+			item = "當你擁有[迅影]時，你的近戰最後一擊會使你的下一次[迅雷閃]升級為[真・迅雷閃]";
+			item2 = "你的近戰攻擊有10%的幾率使你在3秒內所有的[迅雷閃]都變為[真・迅雷閃]";
+			break;
+		case MagicSwordName.WanJun:
+			item = "當你擁有[蠻雷]時，通過[雷]觸發的怒雷會額外對目標和目標周圍引發一次雷暴脈沖，造成相當於你攻擊力60%的閃電傷害。";
+			item2 = "當你同時擁有[蠻雷]和[永劫天雷]時，通過[雷]觸發的怒雷造成的傷害提高50%，並且必定觸發[永劫天雷]";
+			break;
+		case MagicSwordName.BaiZu:
+			item = "當你的[毒刃]觸發時，額外追加200%的近戰傷害。";
+			item2 = "當你同時擁有[毒刃]和[判官時刻]時，觸發[毒刃]時有15%的幾率觸發一次[判官時刻]";
+			break;
+		case MagicSwordName.XueShi:
+			item = "當你擁有[血濺]時，你的血彈產生的血球將會變為血虱自動攻擊周圍的敵人。血虱會每秒造成相當於你攻擊力10%的傷害，並爲你恢復傷害50%的生命值。";
+			item2 = "當血虱對敵人累計造成相當於你攻擊力100%的傷害時，會產生一次血爆對周圍的敵人造成200%的傷害，並自動返回到你身上。";
+			break;
+		case MagicSwordName.BaZhe:
+			item = "當你擁有[神勇無懼]時，你的近戰攻擊會對前方造成大範圍的震擊，額外造成你攻擊力100%的傷害，但你的攻擊速度降低60%，移動速度降低25%。";
+			item2 = "當你同時擁有[神勇無懼]和[不動如山]時，你的震擊造成的傷害提高200%，範圍提高300%。";
+			break;
+		case MagicSwordName.KuangTu:
+			item = "當你擁有[走火入魔]時，失去其攻擊力加成與防禦損失，但你造成傷害時15%的幾率造成300%的額外傷害。";
+			item2 = "狂屠的觸發幾率提高25%";
+			break;
+		case MagicSwordName.KuangLuan:
+			item = "當你擁有[狂熱]時，當[狂熱]疊加到20層時，你的所有傷害提高30%，持續5秒。";
+			item2 = "當你擁有[愈演愈烈]時，當敵人的[愈演愈烈]疊加到10層時，會立刻對敵人造成500%的近戰傷害。";
+			break;
+		case MagicSwordName.ZuiXian:
+			item = "當你攜帶[醉仙釀]時，你躲閃攻擊時，會對敵人造成一次相當與你近戰傷害550%的傷害。";
+			item2 = "當你同時攜帶[醉仙釀]和[白虎之魂]時，你的近戰攻擊有5%的幾率直接觸發[醉仙釀]和[白虎之魂]的核心槽效果。";
+			break;
+		case MagicSwordName.XueLian:
+			item = "當你的核心槽攜帶[死之蓮]，同時任意槽攜帶[北風花]時，死之蓮花瓣會造成額外50%的冰霜傷害，並有15%的幾率[凍結]敵人1秒。";
+			item2 = "當你的核心槽攜帶[死之蓮]，同時任意槽攜帶[北風花]時，你造成近戰傷害時都有5%的幾率直接觸發死之蓮的核心槽效果。";
+			break;
+		case MagicSwordName.MingJiang:
+			item = "當你的核心槽攜帶[黃紙]時，黃紙的傷害提高50%。";
+			item2 = "當你的核心槽攜帶[黃紙]時，將無視[黃紙]等級和擁有黃紙枚數，必定發動[法天象地]";
+			break;
+		case MagicSwordName.LangWang:
+			item = "當你同時攜帶[鋒銳之牙]和[狼王白鬃]時，你對處於[流血]狀態的敵人造成的傷害+60%。";
+			item2 = "當你同時攜帶[鋒銳之牙]和[狼王白鬃]時，你對處於[流血]狀態的敵人造成傷害時有15%的幾率使目標向周圍射出6枚血彈，造成相當於攻擊力250%的傷害。";
+			break;
+		case MagicSwordName.HuaTuo:
+			item = "當你同時擁有[血靈芝]和[跌打草]時，當你造成傷害時，有15%幾率獲得所有傷害提升20%、防禦提高20%或者每秒恢復1%的生命值其中任意一個效果，持續5秒。";
+			item2 = "華佗提供的增益效果提高100%。";
+			break;
+		case MagicSwordName.YingYan:
+			item = "當你擁有[飛劍強化]時，使你的[飛劍強化]效果翻倍";
+			item2 = "[百步穿楊]的觸發幾率提高20%";
+			break;
+		case MagicSwordName.TuMie:
+			item = "[摧枯拉朽]的現在對生命低於60的敵人開始生效，[不二打]對生命高於80%的敵人生效。";
+			item2 = "當你同時擁有[摧枯拉朽]與[不二打]時，你擊殺的敵人會產生爆炸，對周圍的敵人造成550%的傷害。";
+			break;
+		case MagicSwordName.TaiZu:
+			item = "每擁有一個[通用技能]你造成的所有傷害提高5%";
+			item2 = "當你擁有超過8個[通用技能]時，你造成的所有傷害額外提高100%";
+			break;
+		case MagicSwordName.PuTong:
+			item = "近戰和飛劍攻擊時：有6%的幾率造成666%的傷害。";
+			item2 = "你造成任意傷害時：有0.01%的幾率發動神羅天真・程序員之怒";
+			break;
+		case MagicSwordName.BaoNu:
+			item = "當你核心槽攜帶[狂暴之血]時，怒氣爆發觸發幾率提高10%";
+			item2 = "當你核心槽攜帶[狂暴之血]時，你的怒氣爆發結束時，會發動一次[阿修羅之怒]，對附近大範圍敵人造成2400%的近戰傷害。";
+			break;
+		case MagicSwordName.ShanBeng:
+			item = "當你同時攜帶[大骨]和[破冰石]時，你的近戰攻擊有15%的幾率觸發山崩，對前方大範圍造成沖擊傷害，造成200%的近戰攻擊。對[昏迷]或[凍結]的敵人造成的傷害提高100%。";
+			item2 = "山崩會向當前方向連續觸發3次。";
+			break;
+		case MagicSwordName.FengHuo:
+			item = "當你同時攜帶[火硝石]和[凝氣草]時，當你造成傷害時有15%的幾率召喚3道火龍卷向3個方向飛出去，對觸碰到的敵人造成105%的火焰傷害。";
+			item2 = "火龍卷數量提高一倍。";
+			break;
+		case MagicSwordName.HuangQuan:
+			item = "觸發[極寒]時有70%的幾率在目標腳下召喚一灘苦寒黃泉，苦寒黃泉會對處於其中的敵人造成冰霜傷害，每秒造成80%攻擊的冰霜傷害，持續5秒。處於苦寒黃泉中的敵人將被視為[凍結]狀態。";
+			item2 = "苦寒黃泉造成的傷害提高100%，每次對敵人造成傷害都會使其範圍擴大。";
+			break;
+		case MagicSwordName.HanChuan:
+			item = "[冰刃]的暴擊率提高10%，並可以觸發[極寒]效果";
+			item2 = "當你用飛劍觸發[極寒]時，會對目標造成100%的冰霜傷害，並向周圍發射6枚弱化的[冰刃]造成40%的冰霜傷害。";
+			break;
+		case MagicSwordName.MingZhuang:
+			item = "當你的核心槽攜帶[鬼妃斷發]時，[死咒]會每秒對目標造成相當於你攻擊力33%的真實傷害。";
+			item2 = "當你的核心槽攜帶[鬼妃斷發]時，[死咒]每次造成傷害時，都有33%的概率發射鬼發對目標以及周圍的敵人造成300%的真實傷害，並附加5秒的[燃燒],[流血]以及[中毒]。";
+			break;
+		case MagicSwordName.SanYuan:
+			item = "當你攜帶[三色結晶]時，你的近戰攻擊有15%幾率隨機追加10%的火焰、閃電或冰霜傷害中的一種元素傷害。";
+			item2 = "當你攜帶[三色結晶]時，你的近戰或飛劍攻擊都會附帶15%的火焰、閃電、冰霜傷害。";
+			break;
+		case MagicSwordName.BaHuang:
+			item = "當你攜帶[猛虎之印]時，你的近戰攻擊的第一擊會發動橫掃千軍，攻擊範圍增大，造成的傷害提高75%";
+			item2 = "當你攜帶[猛虎之印]時，你的近戰最後一擊會發動一次超級八荒破，對周圍的敵人造成320%的近戰傷害，並擊暈敵人。";
+			break;
+		case MagicSwordName.ShenDong:
+			item = "當你同時擁有[北風花]和[千年寒冰]時，你的冰霜傷害提高40%";
+			item2 = "深冬增加的冰霜傷害額外提高80%";
+			break;
+		case MagicSwordName.JingZhe:
+			item = "當你同時擁有[引雷索]和[響雷石]時，你的閃電傷害提高40%";
+			item2 = "驚蟄增加的閃電傷害額外提高80%";
+			break;
+		case MagicSwordName.ZhanLong:
+			item = "[斬龍訣]有15%的幾率造成3倍傷害";
+			item2 = "當你擁有[斬龍訣]時，你的每一刀都會被斬龍訣替代，但[斬龍訣]造成的傷害會降低75%，不再受到近戰攻擊速度加成，但近戰攻擊速度會轉變為近戰攻擊加成。";
+			break;
+		case MagicSwordName.ShiLie:
+			item = "你的[神行一閃]會使敵人獲得[時之裂]效果，使其每秒受到攻擊力60%的傷害，持續10秒。";
+			item2 = "[時之裂]可以最大疊加5層，每層時之裂會使敵人受到的所有傷害提高30%，當你使用[劍心]收刀時，直接引爆所有敵人身上的[時之裂]";
+			break;
+		case MagicSwordName.ShuangSheng:
+			item = "當你擁有[夢纏]時，[夢纏]對處於[時之破碎]的敵人觸發4倍傷害的幾率提高40%";
+			item2 = "當你擁有[迷蹤]時，你的瞬身將可以直接發射[幻刃]。並且幻刃的傷害提高250%";
+			break;
+		}
+		break;
+	case Language.English:
+		switch (mn)
+		{
+		case MagicSwordName.WuMing:
+			item = "[Follow Through] deals 30% more damage and chance to trigger [Blade Storm] is increased by 10%.";
+			item2 = "When you have both [Blade Storm] and [Follow Through], whenever you trigger [Blade Storm] then [Follow Through] will also be triggered when the flying swords hits.";
+			break;
+		case MagicSwordName.HuanMie:
+			item = "Whenever you trigger [Cold Blood], [Sword Recall] cooldown is reduced by 1 second.";
+			item2 = "When your [Sword Recall] is in cooldown, all damage you deal is increased by 50%.";
+			break;
+		case MagicSwordName.ZhouYu:
+			item = "Whenever you use [Sword Fairy] or trigger [Sword God], Flying Sword damage is increased by 100%.";
+			item2 = "[Sword Meter] restriction is removed.";
+			break;
+		case MagicSwordName.DuoRi:
+			item = "Whenever your Sun Piercing Ray hits the enemy, it explodes dealing 70% area damage.";
+			item2 = "Explosions are 50% larger and explosion damage is increased by 100%.";
+			break;
+		case MagicSwordName.ChiYan:
+			item = "[Burning Blade] damage is increased by 400%.";
+			item2 = "When [Burning Blade] is triggered, shoot a blade of burning sword energy at the target area dealing 100% damage.";
+			break;
+		case MagicSwordName.JiuShen:
+			item = "[Burning Explosion] damage is increased by 80%.";
+			item2 = "[Burning Explosion] creates a huge fireball that deals 75% Damage.";
+			break;
+		case MagicSwordName.YaRen:
+			item = "If you have [Sharp Fang] then your Melee Attack Speed is increased by 25%.";
+			item2 = "Melee Attack Speed bonus from Toothed Blade is increased by another 35%.";
+			break;
+		case MagicSwordName.KongMing:
+			item = "If you have [Qi Herb], your Melee Attacks will carry Qi blades and Flying Swords will carry Qi explosion that deal 15% damage.";
+			item2 = "Qi blade and Qi explosion damage from Nirvana are increased by another 25%.";
+			break;
+		case MagicSwordName.QingShe:
+			item = "If you have both [Zombie Finger] and [Realgar], your Poison damage is increased by 50%.";
+			item2 = "Poison damage from Blue Serpent is increased by another 75%.";
+			break;
+		case MagicSwordName.YangZhan:
+			item = "If you have [Bruise Herb], Melee attacks have 3% chance to drop a Healing Sphere.";
+			item2 = "Chance for Warmonger to drop Healing Sphere is increased by 5%.";
+			break;
+		case MagicSwordName.ManWu:
+			item = "If you have [Big Bone], your Melee attacks have 5% chance to trigger the [Big Bone] Core Slot effect once. ";
+			item2 = "Chance to trigger Barbarian Might is increased by another 10%.";
+			break;
+		case MagicSwordName.ZhouSha:
+			item = "If you have [Heart of Hatred] in your Skill slot, the buff is doubled but you are killed instantly by any damage you take.";
+			item2 = "You have 50% chance to survive when you take damage.";
+			break;
+		case MagicSwordName.XueChou:
+			item = "If you have[Blood Jade Marrow] in your Power Slot, Evil Eye duration is increased by 100%.";
+			item2 = "If you have [Blood Jade Marrow] when you deal damage, there is 5% chance that you may gain All Damage +30% and Defense +20% for 5 seconds.";
+			break;
+		case MagicSwordName.ShuangJiang:
+			item = "If you have [Millennium Ice] in your Power Slot, you gain 1 extra Chill effect each time.";
+			item2 = "Chill effect from Frostfall is increased by 1.";
+			break;
+		case MagicSwordName.DiaoLing:
+			item = "If you have [Death Lotus], Death Petals have 15% chance to deal 2X damage.";
+			item2 = "Your Death Petals can pass through the enemy.";
+			break;
+		case MagicSwordName.LieFeng:
+			item = "If you have [Windchaser Herb] in your Core Slot, your Core Slot skill is 15% more likely to be triggered.";
+			item2 = "Chance to trigger Wild Gust Core Slot skill is increased by another 20%.";
+			break;
+		case MagicSwordName.XuYu:
+			item = "If you have [Sand of Muhurta] in your Core Slot, both Attack Speed and Movement Speed are increased by 40%.";
+			item2 = "Attack Speed and Movement Speed bonus from Muhurta are both increased by 80%.";
+			break;
+		case MagicSwordName.MoYan:
+			item = "If you have [Ink Fire Crystal], your Melee attacks have 15% chance to trigger Ink Fire Blade and add 50% <color=#FFDCBD>True</color> <color=#BF2B00>Flame damage</color>.";
+			item2 = "Chance to trigger Ink Flare is increased by another 85%.";
+			break;
+		case MagicSwordName.LiuHuo:
+			item = "If you have both [Ambrosia] and [Fiery Saltpeter], your <color=#BF2B00>Flame damage</color> is increased by 50%.";
+			item2 = "Flame damage from Flowing Flames is increased by 75%.";
+			break;
+		case MagicSwordName.SuiBing:
+			item = "If you have [Icebreaker Stone], your Melee attacks have 5% chance to trigger the [Icebreaker Stone] Core Slot effect once. ";
+			item2 = "Chance to trigger Shattered Ice is increased by another 10%.";
+			break;
+		case MagicSwordName.ZhuGuang:
+			item = "If you have [Pearl], your Shield effect is increased by 15%.";
+			item2 = "Shield bonus from Pearl Glow is increased by 25%.";
+			break;
+		case MagicSwordName.XingChen:
+			item = "If you have [Celestial Jade], your Melee and Flying Sword attacks have 6% chance to trigger the [Celestial Jade] Core Slot effect. ";
+			item2 = "If you have [Celestial Jade] in your Skill slot, you receive both Sun Touched and Moon Blessed.";
+			break;
+		case MagicSwordName.LeiXi:
+			item = "If you have [Swift Shadow], a final blow in melee combat upgrades your next [Thunder Flash] to [True Thunder Flash]";
+			item2 = "Your melee attacks have a 10% chance to turn all of your 'Thunder Flash' into a 'True Thunder Flash' for the next 3 seconds";
+			break;
+		case MagicSwordName.WanJun:
+			item = "If you have [Wild Thunder], thunderbolts triggered by [Thunder] will trigger a lightning storm against the target and its surrounding area, dealing Lightning damage equal to 60% of your Attack. ";
+			item2 = "If you have both [Wild Thunder] and [Thunder of Doom], thunderbolts triggered by [Thunder] will deal 50% more damage and always trigger [Thunder of Doom]";
+			break;
+		case MagicSwordName.BaiZu:
+			item = "When [Poisoned Blade] is triggered gain 200% extra Melee Damage.";
+			item2 = "When you use [Poisoned Blade] and [Judgment Day] together, triggering [Poisoned Blade] has a 15% chance to trigger [Judgment Day] once";
+			break;
+		case MagicSwordName.XueShi:
+			item = "If you have [Blood Spatter], the HP balls created by your Blood Orbs turn into Blood Lice and automatically attack nearby enemies. Blood Louse deals damage equal to 10% of your Attack every second and restores 50% of the damage value to your HP.";
+			item2 = "When total Blood Louse damage to an enemy is equal to 100% of your Attack, it triggers a Blood Burst that deals 200% Damage to surrounding enemies before returning to your body.";
+			break;
+		case MagicSwordName.BaZhe:
+			item = "If you have [Fearless Warrior], your melee attacks cause a shock wave in front of you dealing extra damage equal to 100% of your Attack,but your Attack Speed reduced by 70% and your Movement Speed reduced by 25% ";
+			item2 = "If you have both [Fearless Warrior] and [Indomitable], your Shock Wave damage is increased by 200% and range is increased by 300%. ";
+			break;
+		case MagicSwordName.KuangTu:
+			item = "If you have [Damnation], attack boost and defense reduction are traded for a 15% chance for an attack to deal 300% extra damage. ";
+			item2 = "Chance to trigger Butcher is increased by 25%";
+			break;
+		case MagicSwordName.KuangLuan:
+			item = "If you have [Berserk], once [Berserk] is stacked 20 times then all Damage you deal is increased by 30% for 5 seconds.";
+			item2 = "If you have [Escalation], when the enemy’s [Escalation] is stacked 10 times they immediately take 500% Melee Damage.";
+			break;
+		case MagicSwordName.ZuiXian:
+			item = "If you have [Ambrosia], the enemy takes damage equal to 550% of your Melee Damage for every attack you dodge.";
+			item2 = "If you both have [Ambrosia] and [White Tiger Spirit], your Melee attacks have a 5% chance to directly trigger the [Ambrosia] and [White Tiger Spirit] Core Slot effects.";
+			break;
+		case MagicSwordName.XueLian:
+			item = "If you have [Death Lotus] in your Core Slot and [Northwind Bloom] in any other slot, Death Lotus petals deal 50% extra Frost Damage and have a 15% chance to [Freeze] an enemy for 1 second.";
+			item2 = "If you have [Death Lotus] in your Core Slot, and [Northwind Bloom] in any other slot, all melee damage you deal has a 5% chance to directly trigger the [Death Lotus] Core Slot effect. ";
+			break;
+		case MagicSwordName.MingJiang:
+			item = "If you have [Yellow Charm] in your Core Slot, Yellow Charm gains 50% Damage.";
+			item2 = "If you have [Yellow Charm] in your Core Slot, [Elemental Meltdown] will always trigger regardless of [Yellow Charm] quality and quantity.";
+			break;
+		case MagicSwordName.LangWang:
+			item = "If you have both [Sharp Fang] and [White Wolf Mane], you deal 60% more damage to enemies with [Bleed].";
+			item2 = "If you have both [Sharp Fang] and [White Wolf Mane], any damage to you deal to enemies with [Bleed] has a 15% chance to make the target shoot 6 Blood Orbs in all directions, dealing damage equal to 250% of Attack.";
+			break;
+		case MagicSwordName.HuaTuo:
+			item = "If you have both [Blood Fungus] and [Bruise Herb], upon dealing damage there is 15% chance to either increase all damage by 20%, defense by 20%, or heal you by 1% HP every second. The effect is random and lasts 5 seconds.";
+			item2 = "Increases the effect of the Healer buff by 100%.";
+			break;
+		case MagicSwordName.YingYan:
+			item = "If you have [Flying Sword Boost], the effect of your [Flying Sword Boost] is doubled";
+			item2 = "Chance to trigger Unerring Aim is increased by another 20%";
+			break;
+		case MagicSwordName.TuMie:
+			item = "[Rampage] now takes effect on enemies with less than 60% HP, while [King Hit] takes effect on enemies with more than 80% HP.";
+			item2 = "If you have both [Rampage] and [King Hit], any enemies you kill will explode and deal 550% Damage to surrounding enemies.";
+			break;
+		case MagicSwordName.TaiZu:
+			item = "Every [Common Skill] you have increases your damage by 5%";
+			item2 = "If you have more than 8[Common Skills], then you will deal 100 % bonus damage";
+			break;
+		case MagicSwordName.PuTong:
+			item = "Melee and Flying Sword attacks: 6% chance to deal 666% damage.";
+			item2 = "Upon dealing damage： 0.01% chance to trigger Programmer’s Unholy Rage:";
+			break;
+		case MagicSwordName.BaoNu:
+			item = "If you have [Berserker Blood] in your Core Slot, the chance to trigger Rage Explosion is increased by 10%.";
+			item2 = "If you have [Berserker Blood] in your Core Slot, [Rage of Ashura] is triggered at the end of your Rage Explosion. dealing 2400% melee damage to all surrounding enemies in a wide area. ";
+			break;
+		case MagicSwordName.ShanBeng:
+			item = "If you have both [Big Bone] and [Icebreaker Stone], your Melee Attacks have a 15% chance to trigger an avalanche that deals impact damage over a large area to the front equal to 200% Melee Damage. Deal 100% more damage to [Stunned] or [Frozen] enemies.";
+			item2 = "Avalanche will trigger 3 times in a row to the front.";
+			break;
+		case MagicSwordName.FengHuo:
+			item = "If you have both [Fiery Saltpeter] and [Qi Herb], upon dealing damage you have a 10% chance to summon 3 flaming tornadoes that fly off in 3 directions, dealing 105% Flame damage to all enemies that they come into contact with.";
+			item2 = "Doubles the number of fire tornadoes triggered.";
+			break;
+		case MagicSwordName.HuangQuan:
+			item = "Triggering [Icy Cold] has a 70% chance to summon a cold Acheron at the target's feet. Earth Spring deals Frost Damage to any enemies standing in it equal to 80% of Attack for 5 seconds. Enemies standing in the Earth Spring will be treated as [Frozen].";
+			item2 = "Damage dealt by cold Acheron is increased by 100%. Its range is also increased each time it damages the enemy.";
+			break;
+		case MagicSwordName.HanChuan:
+			item = "[Ice Blade] Critical Hit Rate is increased by 10% and can trigger [Icy Cold] effect";
+			item2 = "If you trigger [Icy Cold] with your flying sword, this deals 100% Frost Damage to the target and also shoots 6 weakened [Ice Blade] dealing 40% Frost Damage.";
+			break;
+		case MagicSwordName.MingZhuang:
+			item = "If you have [Ghostly Strand] in your Core Slot,[Doom] effect will deals 33% Ture Damage to the enemy.";
+			item2 = "If you have [Ghostly Strand] in your Core Slot,when [Doom] effect deals damage,you have 33% chance to summon ghostly hair to deal 300% True Damage to nearby enemies and cause <color=#f2380d>[Burning]</color>, <color=#C83E48>[Bleed]</color> and <color=#ad00bc>[Poisoned]</color><color=#ec7500> effects</color> to the enemy for 3 seconds.";
+			break;
+		case MagicSwordName.SanYuan:
+			item = "If you have [Tricolor Crystal], Your melee attack  has 15% chance to randomly deal 10% Flame,Lightning and Frost Damage. ";
+			item2 = "If you have [Tricolor Crystal], Your melee and flying sword attack will deal 15% Flame,Lightning and Frost Damage.";
+			break;
+		case MagicSwordName.BaHuang:
+			item = "If you have [Tiger’s Mark],your first blow in melee attack will change to a sweep,increasing the attack range and dealing 75% increased damage";
+			item2 = "If you have [Tiger’s Mark]，your last blow in melee attck will casts a super compass strike to deal 320% melee attack damage.";
+			break;
+		case MagicSwordName.ShenDong:
+			item = "If you have both [Northwind Bloom] and [Lightning Lock], your <color=#73D7F1>Frost damage</color> is increased by 40%.";
+			item2 = "<color=#73D7F1>Frost damage</color> from Deep Cold is increased by 80%.";
+			break;
+		case MagicSwordName.JingZhe:
+			item = "If you have both [Thunder Stone] and [Millennium Ice], your <color=#F3ED56>Lightning damage</color> is increased by 40%.";
+			item2 = "<color=#F3ED56>Lightning damage</color> from Thunder Waker is increased by 80%.";
+			break;
+		case MagicSwordName.ZhanLong:
+			item = "[Dragon Slash] has 15% chance to deal 3X damage.";
+			item2 = "If you have [Dragon Slash], your all melee attack will change to [Dragon Slash], but the damage of [Dragon Slash] will be reduced by 75%. No longer receives a melee attack speed bonus, but melee attack speed is converted to  melee attack bonus. ";
+			break;
+		case MagicSwordName.ShiLie:
+			item = "[Divine Walk] will cause the enemy to obtain the [Break of Time] effect, causing them to take damage equal to 60% of their attack power per second for 10 seconds.";
+			item2 = "[Break of Time] can be stacked up to 5 layers. Each layer of [Break of Time] will increase all damage received by the enemy by 30%. When you use [Blade Heart] to close the sword, it will directly detonate the [Break of Time] on all enemies.";
+			break;
+		case MagicSwordName.ShuangSheng:
+			item = "When you have [Dream Coil], the chance of [Dream Coil] to deal 4x damage to enemies in [Crack of Time] is increased by 40%";
+			item2 = "When you have [No Trace], your instant body will be able to launch [Phantom Blade] directly. And the damage of the magic blade is increased by 250%";
+			break;
+		}
+		break;
+	case Language.Japanese:
+		switch (mn)
+		{
+		case MagicSwordName.WuMing:
+			item = "[順流の刃]が敵に与えるダメージが30%増加する。また、[百刃滝]の発動確率が10%増加する。";
+			item2 = "同時に[百刃滝]と[順流の刃]を所有している場合：百刃滝を発動すると、飛剣が敵に命中したときに順流の刃を発動する。";
+			break;
+		case MagicSwordName.HuanMie:
+			item = "[冷血]が発動すると、[剣・返]のクールダウンが1秒減少する。";
+			item2 = "[剣・返]がクールダウン中である場合、すべての与ダメが50%増加する。";
+			break;
+		case MagicSwordName.ZhouYu:
+			item = "[剣仙]もしくは[剣神]を発動させた場合、飛剣のダメージは100%増加する。";
+			item2 = "[剣熱枠]の制限を外す。";
+			break;
+		case MagicSwordName.DuoRi:
+			item = "貫日の光が敵に命中した場合、追加の爆発が1回発生し、今回ダメージの70%の範囲ダメージを敵に与える。";
+			item2 = "爆発範囲が50%増加し、爆発ダメージが100%増加する。";
+			break;
+		case MagicSwordName.ChiYan:
+			item = "[燃刃]の与ダメが400%増加する。";
+			item2 = "[燃刃]を発動したとき、攻撃範囲に向け炎の剣気を放つ。今回ダメージの100%のダメージを敵に与える。";
+			break;
+		case MagicSwordName.JiuShen:
+			item = "[爆燃]の与ダメが80%増加する。";
+			item2 = "[爆燃]を使うと巨大な火の輪を生み出し、周囲に拡散する。今回ダメージの75%のダメージを敵に与える。";
+			break;
+		case MagicSwordName.YaRen:
+			item = "[鋭い牙]を所持している場合、近接攻撃速度が25%増加する。";
+			item2 = "牙刃による近接攻撃強化が35%増加する。";
+			break;
+		case MagicSwordName.KongMing:
+			item = "[凝気草]を所持している場合、近接攻撃は気刃を追加、飛剣は気爆を追加するようになる。今回ダメージの15%のダメージを敵に与える。";
+			item2 = "空明による気刃、気爆のダメージが25%増加する。";
+			break;
+		case MagicSwordName.QingShe:
+			item = "同時に[屍変断指]及び[雄黄]を所持している場合、敵に与える毒ダメージは50%増加する。";
+			item2 = "青蛇による毒ダメージ強化が75%増加する。";
+			break;
+		case MagicSwordName.YangZhan:
+			item = "[打撲草]を所持している場合、近接攻撃をすると3%の確率で回復玉がドロップする。";
+			item2 = "養戦による回復玉のドロップ確率が5%増加する。";
+			break;
+		case MagicSwordName.ManWu:
+			item = "[大骨]を所持している場合、近接攻撃をすると5%の確率で[大骨]の核心枠効果を1回発動する。";
+			item2 = "蛮武の発動確率が10%増加する。";
+			break;
+		case MagicSwordName.ZhouSha:
+			item = "体質枠に[憎悪の心]がある場合、効果は2倍になるが、プレイヤーがダメージを1回受けると即死する。";
+			item2 = "ダメージを受けたとき、50%で死亡を回避できる。";
+			break;
+		case MagicSwordName.XueChou:
+			item = "力枠に[血玉髄]がある場合、邪悪の目の継続時間+100％。";
+			item2 = "[血玉髄]を持っている場合、プレイヤーがダメージを与えると5%の確率ですべての与ダメが30%増加し、防御力が20%増加する（5秒間継続）。";
+			break;
+		case MagicSwordName.ShuangJiang:
+			item = "力枠に[千年寒氷]がある場合、寒冷効果を毎度1スタック多めに獲得できる。";
+			item2 = "霜降による追加寒冷効果+1スタック。";
+			break;
+		case MagicSwordName.DiaoLing:
+			item = "[死の蓮]を所持している場合、死の花びらによる攻撃は15%確率で2倍のダメージを与える。";
+			item2 = "死の花びらは敵を貫通できるようになる。";
+			break;
+		case MagicSwordName.LieFeng:
+			item = "核心枠に[踏風草]がある場合、核心枠のスキル発動確率が15%増加する。";
+			item2 = "烈風による核心枠スキル発動確率強化が20%増加する。";
+			break;
+		case MagicSwordName.XuYu:
+			item = "核心枠に[須臾の砂]がある場合、攻撃速度と移動速度強化が40%増加する。";
+			item2 = "須臾による攻撃速度と移動速度強化が80%増加する。";
+			break;
+		case MagicSwordName.MoYan:
+			item = "[墨火の結晶]を所持している場合、近接攻撃は15%の確率で墨火刃を出現させ、50%の防御力無視の<color=#BF2B00>火炎ダメージ</color>を繰り出す。";
+			item2 = "墨炎の発動確率が85%増加する。";
+			break;
+		case MagicSwordName.LiuHuo:
+			item = "同時に[醉仙酒]及び[火硝石]を所持している場合、敵に与える<color=#BF2B00>火炎ダメージ</color>は50%増加する。";
+			item2 = "流火による火炎ダメージ強化が75%強化する。";
+			break;
+		case MagicSwordName.SuiBing:
+			item = "[破氷石]を所持している場合、近接攻撃をすると5%の確率で[破氷石]の核心枠効果を1回発動する。";
+			item2 = "碎氷の発動確率が10%増加する。";
+			break;
+		case MagicSwordName.ZhuGuang:
+			item = "[真珠]を所持している場合、シールド効果+15%。";
+			item2 = "珠光によるシールド強化が25%増加する。";
+			break;
+		case MagicSwordName.XingChen:
+			item = "[星辰の玉]を所持している場合、近接/飛剣攻撃を行うと6%の確率で[星辰の玉]の核心枠効果を1回発動する。";
+			item2 = "功效枠に[星辰の玉]がある場合、太陽と月の祝福を同時に獲得できる。";
+			break;
+		case MagicSwordName.LeiXi:
+			item = "[迅影]を持っている場合、近接攻撃の最後の一撃を放つことで次の[迅雷閃]は[真・迅雷閃]になる。";
+			item2 = "近接攻撃は10%の確率で以下の効果を得る：3秒間、自身の[迅雷閃]がすべて[真・迅雷閃]になる。";
+			break;
+		case MagicSwordName.WanJun:
+			item = "プレイヤーが[蛮雷]を所持している場合、[雷]による怒雷は、標的及び標的の周囲に波動攻撃を放ち、自身の攻撃力×60%の雷ダメージを与える。";
+			item2 = "[蛮雷]と[永劫天雷]を同時に持っている場合、[雷]によって発動する怒雷のダメージは50%上昇し、必ず[永劫天雷]を発動する";
+			break;
+		case MagicSwordName.BaiZu:
+			item = "[毒刃]が発動する際、200%の近接ダメージを追加する。";
+			item2 = "[毒刃]と[判官時刻]を同時に持っている場合、[毒刃]発動時、15%の確率で[判官時刻]を1回発動する。";
+			break;
+		case MagicSwordName.XueShi:
+			item = "[血潮]を持っている場合、血の弾丸による血球は血虫に変化し、自動的に周囲の敵を攻撃するようになる。血虫は毎秒攻撃力10%のダメージを敵に与え、同時にダメージの50%分相当の体力を回復する。";
+			item2 = "血虫が敵に自身の攻撃力×100%以上の累計ダメージを与えた場合、爆発を起こし周囲の敵に200%のダメージを与え、自分のところに戻ってくる。";
+			break;
+		case MagicSwordName.BaZhe:
+			item = "[大胆不敵]を持っている場合、近接攻撃は前方に大範囲な神聖なる衝撃を放ち、自身の攻撃力×100%のダメージを敵に与える。ただし、攻撃速度は60％減少する、移動速度は25％減少する。";
+			item2 = "[大胆不敵]と[山の如く]を同時に所持する際、プレイヤーによる衝撃のダメージは200%増加、範囲は300%増加する。";
+			break;
+		case MagicSwordName.KuangTu:
+			item = "[無我夢中]を所持している場合、その攻撃力アップ及び防御力ダウンの効果はなくなるかわりに、ダメージを与えた際15%の確率で300%の追加ダメージを与える。";
+			item2 = "狂屠の発動確率が25%あがる";
+			break;
+		case MagicSwordName.KuangLuan:
+			item = "[狂熱]を持っている場合、[狂熱]が20スタックになると自身のすべてのダメージが30%増加する（5秒間持続）。";
+			item2 = "[激化]を持っている場合、敵の[激化]が10スタックになると直ちにその敵に150%の近接ダメージを与える。";
+			break;
+		case MagicSwordName.ZuiXian:
+			item = "核心枠に[醉仙酒]がある場合、攻撃を避ける際、敵に近接ダメージ×550%のダメージを与える。";
+			item2 = "[醉仙酒]と[白虎の魂]を同時に所持している場合、近接攻撃は5%の確率で[醉仙酒]と[白虎の魂]の核心枠効果を発動する。";
+			break;
+		case MagicSwordName.XueLian:
+			item = "核心枠に[死の蓮]があり、かつ任意の枠に[北風花]がある場合、死の蓮の花びらは50%の追加氷ダメージを与え、さらに15%の確率で敵を1秒間[凍結]させる。";
+			item2 = "核心枠に[死の蓮]があり、かつ任意の枠に[北風花]がある場合、近接ダメージを与えた際、5%の確率で死の蓮の核心枠効果を直接発動できる。";
+			break;
+		case MagicSwordName.MingJiang:
+			item = "核心枠に[黄紙]がある場合、黄紙のダメージは50%増加する。";
+			item2 = "核心枠に[黄紙]がある場合、[黄紙]のレベル及び所持枚数を無視し、さらに[法天象地]を必ず発動する。";
+			break;
+		case MagicSwordName.LangWang:
+			item = "[鋭い牙]と[狼王の髭]を同時に所持している場合、[流血]状態の敵に与えるダメージ+60%。";
+			item2 = "[鋭い牙]と[狼王の髭]を同時に所持している場合、[流血]状態の敵にダメージを与えた際、15%の確率で標的を中心に周囲に6枚の血の弾丸を撃ち出し、攻撃力×250%のダメージを与える。";
+			break;
+		case MagicSwordName.HuaTuo:
+			item = "[血霊芝]と[打撲草]を同時に所持している場合、ダメージを与えた際、15%の確率で以下のどちらかの効果を得る：「すべての与ダメージ+20%」「防御力+20%」「毎秒体力を1%回復」（いずれも5秒間持続）。";
+			item2 = "華佗によるバフ効果が100%上昇する。";
+			break;
+		case MagicSwordName.YingYan:
+			item = "[飛剣強化]を持っている場合、[飛剣強化]の効果が倍になる";
+			item2 = "[百発百中]の発動確率が20%増加する。";
+			break;
+		case MagicSwordName.TuMie:
+			item = "[一騎当千]は体力が60%を下回る敵に効果を発動するようになり、[不二打]は体力が80%を上回る敵に効果を発動するようになる。";
+			item2 = "[一騎当千]と[不二打]を同時に持っている場合、プレイヤーに撃破された敵は爆発し、周囲の敵に550%のダメージを与えるようになる。";
+			break;
+		case MagicSwordName.TaiZu:
+			item = "[通常スキル]を1つ所有するたびに、プレイヤーのすべてのダメージが5%上昇する";
+			item2 = "9つ以上の[通常スキル]を所有する場合、プレイヤーのすべてのダメージが100%上昇する";
+			break;
+		case MagicSwordName.PuTong:
+			item = "近接及び飛剣攻撃を行う際：6%の確率で666%のダメージを与える。";
+			item2 = "プレイヤーが任意のダメージを与えた際：0.01%の確率で「神羅天真・プログラマーの怒り」を発動する";
+			break;
+		case MagicSwordName.BaoNu:
+			item = "核心枠に[凶暴の血]がある場合、レイジバーストの発動確率が10%上昇する。";
+			item2 = "核心枠に[凶暴の血]がある場合、以下の効果を得る：レイジバースト終了時、[阿修羅の怒り]を発動し、大範囲以内の敵に2400%の近接ダメージを与える。";
+			break;
+		case MagicSwordName.ShanBeng:
+			item = "[大骨]と[破氷石]を同時に持っている場合、近接攻撃は15%の確率で山崩を発動：前方に大範囲なダメージを放ち、200%の近接攻撃を与える。[気絶]もしくは[凍結]状態の敵に与えるダメージが100%上昇する。";
+			item2 = "山崩が現在向いている方向に3回連続で発動する。";
+			break;
+		case MagicSwordName.FengHuo:
+			item = "[火硝石]と[凝気草]を同時に所持している場合、ダメージを与えた際、10%の確率で炎の竜巻を3つ召喚し3つの方向に放たれる。炎の竜巻は、触れた敵に105%の火炎ダメージを与える。";
+			item2 = "炎の竜巻の数が倍になる。";
+			break;
+		case MagicSwordName.HuangQuan:
+			item = "[極寒]発動時、70%の確率で標的の足元に苦寒の黄泉を召喚し、その範囲にいる敵に毎秒攻撃力×80%の氷ダメージを与える（5秒間持続）。苦寒の黄泉にいる敵は[凍結]状態として見なされる。";
+			item2 = "苦寒の黄泉によるダメージが100%上昇し、さらに敵にダメージを与えるたびにその範囲が拡大する。";
+			break;
+		case MagicSwordName.HanChuan:
+			item = "[氷刃]の会心率が10%上昇し、さらに[極寒]効果を発動できるようになる。";
+			item2 = "飛剣で[極寒]を発動した際、標的に100%の氷ダメージを与え、さらに周囲に6枚の小威力な[氷刃]を放つ（この[氷刃]は40%の氷ダメージを与える）。";
+			break;
+		case MagicSwordName.MingZhuang:
+			item = "核心枠に[鬼妃断髪]がある場合、[死の呪文]毎秒ターゲットに攻撃力の33％に等しい真實ダメージを与えます。";
+			item2 = "核心枠に[鬼妃断髪]がある場合、[死の呪文]はダメージを与えるたびに、33％の確率でゴーストヘアを発射し、ターゲットと周囲の敵に300％の真實ダメージを与え、さらに5秒間の[燃焼]、[出血]、[中毒]を引き起こします。";
+			break;
+		case MagicSwordName.SanYuan:
+			item = "[三色結晶]を所持している場合、近接攻撃は15％の確率で、エレメンタルダメージにランダムに10％の火、雷、または氷ダメージを追加します。";
+			item2 = "[三色結晶]を所持している場合、近接攻撃と飛剣攻撃は、15％の火、雷、または氷ダメージを与えます。";
+			break;
+		case MagicSwordName.BaHuang:
+			item = "[猛虎の印]を所持している場合、近接攻撃の最初の一撃で橫掃千軍が開始され、攻撃範囲が広がり、ダメージが75％増加します。";
+			item2 = "[猛虎の印]を所持している場合、近接攻撃の最后の一撃は八荒破を開始し、周囲の敵に320％の近接ダメージを与え、それらを気絶せます。";
+			break;
+		case MagicSwordName.ShenDong:
+			item = "同時に[北風花]及び[千年寒氷]を所持している場合、敵に与える<color=#73D7F1>氷ダメージ</color>は40%増加する。";
+			item2 = "流火による<color=#73D7F1>氷ダメージ</color>強化が80%強化する。";
+			break;
+		case MagicSwordName.JingZhe:
+			item = "同時に[落雷の鎖]及び[響雷石]を所持している場合、敵に与える<color=#F3ED56>雷ダメージ</color>は40%増加する。";
+			item2 = "驚蟄による<color=#73D7F1>氷ダメージ</color>強化が80%強化する。";
+			break;
+		case MagicSwordName.ZhanLong:
+			item = "[龍切り]15％の確率で3倍のダメージを与える";
+			item2 = "[龍切り]を所持している場合、すべての近接攻撃は[龍切り]に変化する、[龍切り]は75％少ないダメージを与え、近接攻撃速度ボーナスを受け取らなくなりますが、近接攻撃速度は近接攻撃ボーナスに変換されます。";
+			break;
+		case MagicSwordName.ShiLie:
+			item = "「神行一閃」は敵に「時の裂け」効菓を与え、毎秒攻撃力60%のダメージを与え、10秒持続させます。";
+			item2 = "[時の裂け]は最大5層まで重ねることができ、各層の時の裂けは敵が受けるすべてのダメージを30%向上させることができ、[剣心]を使用して刀を収めたとき、すべての敵の[時の裂け]を直接爆発させることができます。";
+			break;
+		case MagicSwordName.ShuangSheng:
+			item = "「夢纏」を持つと、「夢纏」が「時の破砕」にいる敵に4倍のダメージを与える確率が40%アップします。";
+			item2 = "「追跡」を持っていると、瞬身は直接「幻刃」を発射することができます。そして幻刃のダメージが250%アップ";
+			break;
+		}
+		break;
+	}
+	return new ValueTuple<string, string>(item, item2);
+}
