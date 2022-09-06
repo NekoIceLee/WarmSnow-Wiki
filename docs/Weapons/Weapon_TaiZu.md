@@ -1,5 +1,5 @@
 # 太祖
-![太祖](../Img/Texture2D_Potion/太祖.png)
+![太祖](../Img/Texture2D_Sword/太祖.png)
 |||
 |:----:|:----:|
 |固定词条|所有伤害|

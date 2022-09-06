@@ -1,5 +1,5 @@
 # 风火
-![风火](../Img/Texture2D_Potion/风火.png)
+![风火](../Img/Texture2D_Sword/风火.png)
 |||
 |:----:|:----:|
 |固定词条|所有伤害|

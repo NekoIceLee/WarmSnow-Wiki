@@ -1,5 +1,5 @@
 # 山崩
-![山崩](../Img/Texture2D_Potion/山崩.png)
+![山崩](../Img/Texture2D_Sword/山崩.png)
 |||
 |:----:|:----:|
 |固定词条|所有伤害|

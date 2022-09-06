@@ -1,5 +1,5 @@
 # 八荒
-![八荒](../Img/Texture2D_Potion/八荒.png)
+![八荒](../Img/Texture2D_Sword/八荒.png)
 |||
 |:----:|:----:|
 |固定词条|近战攻击|

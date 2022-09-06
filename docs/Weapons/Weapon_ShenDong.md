@@ -1,5 +1,5 @@
 # 深冬
-![深冬](../Img/Texture2D_Potion/深冬.png)
+![深冬](../Img/Texture2D_Sword/深冬.png)
 |||
 |:----:|:----:|
 |固定词条|所有攻击|

@@ -1,5 +1,5 @@
 # 惊蛰
-![惊蛰](../Img/Texture2D_Potion/惊蛰.png)
+![惊蛰](../Img/Texture2D_Sword/惊蛰.png)
 |||
 |:----:|:----:|
 |固定词条|闪电伤害|

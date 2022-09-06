@@ -1,7 +1,7 @@
 # 寒川
 <font color=red>三川苦寒菩萨专属</font> 
 
- ![寒川](../Img/Texture2D_Potion/寒川.png)
+ ![寒川](../Img/Texture2D_Sword/寒川.png)
 |||
 |:----:|:----:|
 |固定词条|远程伤害|

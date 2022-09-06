@@ -1,5 +1,5 @@
 # 冥妆
-![冥妆](../Img/Texture2D_Potion/冥妆.png)
+![冥妆](../Img/Texture2D_Sword/冥妆.png)
 |||
 |:----:|:----:|
 |固定词条|所有伤害|

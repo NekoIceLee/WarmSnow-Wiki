@@ -1,5 +1,5 @@
 # 暴怒
-![暴怒](../Img/Texture2D_Potion/暴怒.png)
+![暴怒](../Img/Texture2D_Sword/暴怒.png)
 |||
 |:----:|:----:|
 |固定词条|近战攻击速度|

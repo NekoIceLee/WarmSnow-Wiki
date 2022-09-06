@@ -1,6 +1,6 @@
 # 时裂
 <font color=red>神行迷踪天尊专属</font> 
-![时裂](../Img/Texture2D_Potion/时裂.png)
+![时裂](../Img/Texture2D_Sword/时裂.png)
 |||
 |:----:|:----:|
 |固定词条|所有伤害|

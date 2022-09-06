@@ -1,5 +1,5 @@
 # 普通
-![普通](../Img/Texture2D_Potion/普通.png)
+![普通](../Img/Texture2D_Sword/普通.png)
 |||
 |:----:|:----:|
 |固定词条|所有伤害|

@@ -1,5 +1,5 @@
 # 斩龙
-![斩龙](../Img/Texture2D_Potion/斩龙.png)
+![斩龙](../Img/Texture2D_Sword/斩龙.png)
 |||
 |:----:|:----:|
 |固定词条|所有伤害|
