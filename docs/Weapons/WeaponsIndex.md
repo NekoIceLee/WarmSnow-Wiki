@@ -116,4 +116,4 @@
 
 [珠光](./Weapon_ZhuGuang.md)
 
-[醉仙]
+[醉仙](./Weapon_ZuiXian.md)
