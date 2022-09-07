@@ -9,7 +9,7 @@
 - 造成伤害时：有15%的几率在目标处产生毒爆，对目标和周围敌人造成总攻击<font color=gray>40%</font>/<font color=BlueViolet>70%</font>/<font color=gold>120%</font>点毒伤害。
 - <font color=gold>使你造成的所有毒伤害提高30%。</font>
 #### **敏捷**
-- 每5秒在周围生成一团<font color=gray>毒雾</font>/<font color=BlueViolet>毒雾</font>/<font color=gold>剧毒雾</font>，持续5秒。
+- 造成毒伤害时：有<font color=gray>5%</font>/<font color=BlueViolet>10%</font>/<font color=gold>15%</font>的几率在敌人所在位置产生一团<font color=gray>毒雾</font>/<font color=BlueViolet>毒雾</font>/<font color=gold>剧毒雾</font>，持续5秒。
 - <font color=gold>使你造成的所有毒伤害提高30%。</font>
 #### **功效**
 - 每5秒在周围生成一团<font color=gray>毒雾</font>/<font color=BlueViolet>毒雾</font>/<font color=gold>剧毒雾</font>，持续5秒。
