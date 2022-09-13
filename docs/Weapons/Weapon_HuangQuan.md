@@ -1,6 +1,7 @@
 # 黄泉
 <font color=red>三川苦寒菩萨专属</font>  
 ![黄泉](../Img/Texture2D_Sword/黄泉.png)
+
 |||
 |:----:|:----:|
 |固定词条|近战攻击|

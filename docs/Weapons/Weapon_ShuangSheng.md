@@ -3,6 +3,7 @@
 <font color=red>神行迷踪天尊专属</font> 
 
 ![双生](../Img/Texture2D_Sword/双生.png)
+
 |||
 |:----:|:----:|
 |固定词条|所有伤害|
